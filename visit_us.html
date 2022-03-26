@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/visit_us.css">
+
+    <title>Visit Us | Vincent Van-Dog</title>
+</head>
+
+<body>
+
+    <!-- Menu -->
+
+    <header>
+        <nav class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+              <div class="nav-title">
+                <img src="/images/logo_org.png" alt="logo">
+              </div>
+            </div>
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a class="active"  href="/home.html" >Home</a>
+              <a  href="about_me.html" >About</a>
+              <a href="/porfolio.html" >Portfolio</a>
+              <a href="/shopping.html" >Shopping</a>
+              <a href="visit_us.html" >Visit Us</a>
+              <a href="contactUs.html" >Events</a>
+              <a href="contactUs.html" >Contact Us</a>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+        <section class="sectionAppointment">
+
+            <form action="index.html" method="post" class="appt">
+                <fieldset class="apptField">
+
+                    <legend class="apptLegend">Your info</legend>
+
+                    <label for="name" class="apptInfo">Name:</label>
+                    <input type="text" name="name" id="apptName" autofocus required><br>
+
+                    <label for="email" class="apptInfo">E-mail:</label>
+                    <input type="email" name="email" id="apptEmail" required><br>
+
+                    <label for="phone" class="apptInfo">Contact Number:</label>
+                    <input type="tel" name="phone" id="apptPhone" placeholder="(000) 000-0000" required
+                        pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be (000) 000-0000 format"><br>
+
+                </fieldset>
+
+                <fieldset class="apptField">
+
+                    <legend class="apptLegend">Choose your date</legend>
+
+                    <label for="date" class="apptSchedule">Date:</label>
+                    <input type="date" name="date" id="apptDate" required></input>
+                    <br>
+                    <label for="time" class="apptSchedule">Time:</label>
+                    <input type="time" name="time" id="apptTime" required></input>
+                    <br>
+
+                </fieldset>
+
+                <button type="submit" id="apptButton" value="register">Book my Appointment</button>
+            </form>
+
+
+            <div class="apptInformation">
+                <h1 class="apptTitle">Book Appointment</h1>
+                <p class="apptP">Admission for Van-Dog's gallery is completely free and welcomes everybody.
+                    Please book your free tickets online to reserve a time for your visit.</p>
+
+                <h1 class="apptTitle">Hours</h1>
+                <p class="apptP">Thursday to Sunday: 11am to 9pm<br>
+                                Closed Mondays, Tuesdays and Wednesdays.</p>
+                
+
+                <img src="images/art_galleryvd.png" alt="Vincent Van-Dog's Art Gallery" class="imagesGallery">
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+
+        <footer>
+            <p>
+                Copyright &copy; 2022 Vincent Van-Dog<br>
+                Developed by Tech Newbies<br>
+                vincent@van-dog.com
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
