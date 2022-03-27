@@ -172,14 +172,13 @@ main {
 .imagesVd {
     background-color: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    max-width: 20%;
-    max-height: 20%;
-    border-radius: 50%;
+    max-width: 30%;
+    max-height: 30%;
+    border-radius: 20%;
 }
 
 .boxVd {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 2em;
 }
