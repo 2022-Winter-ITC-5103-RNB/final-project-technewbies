@@ -16,16 +16,18 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 ### Tuyi Chen (N01531425)
 
-- [ ] Create three pages for peripheral products e-commerce: \
-      ** Page 1: overview shop page displaying all peripheral products \
-      ** Page 2: one page for a product detail \
-      \*\* Page 3: dummy shopping cart page
-- [ ] Advanced Features: \
-      ** Page 1: side bar of filter elements: https://www.w3schools.com/howto/howto_js_filter_elements.asp \
-      ** Page 1: add "Quick View | Add to Cart" for each product \
-      ** Page 1: click product and point to specific position on page 2 \
-      ** Page 2: auto-play album for each series of product \
-      \*\* Page 2: add to cart form; select item with actual picture showing
+- [X] Create and design basic layout and functions for peripheral products e-commerce (three pages): \
+** Page 1: overview shop page displaying all peripheral products \
+** Page 2: one page for a product detail \
+** Page 3: dummy shopping cart page
+
+- Advanced Features:
+- [ ] Page 1: side bar of filter elements: https://www.w3schools.com/howto/howto_js_filter_elements.asp
+- [ ] Page 1: add "Quick View | Add to Cart" for each product
+- [ ] Page 1: click product and point to specific position on page 2
+- [X] Page 2: auto-play album for each series of product
+- [ ] Page 2: add to cart form; select item with actual picture showing
+- [ ] Page 2: add (+/-) button to increment number: https://css-tricks.com/number-increment-buttons/
 
 ## Consistent style guide
 

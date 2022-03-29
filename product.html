@@ -61,9 +61,34 @@
         </header>
 
         <main id="product">
-            <div>
-                <img src="images/vv_in_orange.jpg" alt="A poster of Vincent Van-Dog in orange shirt" class="poster-size">
-                <!-- <p>Vincent Van-Dog in Orange Shirt<br>Poster | CAD $8.00</p> -->
+            <script>
+                let posterArray = ["images/vv_in_orange.jpg", "images/vv_in_pink.jpg", "images/vv_in_yellow.jpg", "images/vv_life.jpg"];
+                let cardArray = ["images/vv_in_pink_card.jpg", "images/vv_in_yellow_card.jpg", "images/vv_life_card.jpg", "images/vv_in_orange_card.jpg"];
+                let nbArray = ["images/vv_in_yellow_nb.jpg", "images/vv_life_nb.jpg", "images/vv_in_orange_nb.jpg", "images/vv_in_pink_nb.jpg"];
+                let kcArray = ["images/vv_life_kc.jpg", "images/vv_in_orange_kc.jpg", "images/vv_in_pink_kc.jpg", "images/vv_in_yellow_kc.jpg"];
+
+                let imgNo = 0;
+                let difference = posterArray.length - 1;
+                let delay = 2500;
+                setInterval('changeImages(1)', delay);
+
+                function changeImages(direction) {
+                    imgNo += direction;
+                    if (imgNo > difference) {
+                        imgNo = 0;
+                    }
+                    if (imgNo < 0) {
+                        imgNo = difference;
+                    }
+                    document.getElementById('slides-poster').src = posterArray[imgNo];
+                    document.getElementById('slides-card').src = cardArray[imgNo];
+                    document.getElementById('slides-nb').src = nbArray[imgNo];
+                    document.getElementById('slides-kc').src = kcArray[imgNo];
+                }
+            </script>
+
+            <div class="margin-auto">
+                <img src="images/vv_in_orange.jpg" alt="A poster of Vincent Van-Dog portrait" class="poster-size" name="slides-poster" id="slides-poster">
             </div>
             <div>
                 <h3>Specifications - Poster</h3><br>
@@ -71,11 +96,27 @@
                     <li>72 x 48 cm; 240g cardboard; clear printing & never fade.</li>
                     <li>You can straight stick them or hang these posters with clips on the wall.</li>
                     <li>Ideal gifts for party, birthday, graduations, valentine's day and more other occasions. </li>
-                </ul>
+                </ul><br>
+                <span>Price : CAD $8.00</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange" name="buy_poster" value="Poster - Vincent Van-Dog in Orange Shirt">
+                    <label for="vv_in_orange">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink" name="buy_poster" value="Poster - Vincent Van-Dog in Pink Shirt">
+                    <label for="vv_in_pink">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow" name="buy_poster" value="Poster - Vincent Van-Dog in Yellow Shirt">
+                    <label for="vv_in_yellow">Yellow Shirt</label>
+                    <input type="radio" id="vv_life" name="buy_poster" value="Poster - Vincent Van-Dog Life Photo">
+                    <label for="vv_life">Life Photo</label>
+                    <br><br>
+                    <span>Number:</span>
+                    <input type="text" id="poster_number" name="poster_number"><br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                    <!-- button property: onclick="myFunction()" -->
+                </form>
             </div>
-            <div>
-                <img src="images/vv_in_pink.jpg" alt="A poster of Vincent Van-Dog in pink shirt" class="poster-size">
-                <!-- <p>Vincent Van-Dog in Pink Shirt<br>Poster | CAD $8.00</p> -->
+            <div class="margin-auto">
+                <img src="images/vv_in_pink_card.jpg" alt="A poster of Vincent Van-Dog portrait" class="card-size" name="slides-card" id="slides-card">
             </div>
             <div>
                 <h3>Specifications - Card</h3><br>
@@ -83,11 +124,26 @@
                     <li>A6 format card (105mm x 148mm) and left blank for your own message.</li>
                     <li>Natural white paper 320g with a recycled brown A6 envelope.</li>
                     <li>Perfect for sending any notes or greetings to friends.</li>
-                </ul>
+                </ul><br>
+                <span>Price : CAD $3.50</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange_card" name="buy_card" value="Card - Vincent Van-Dog in Orange Shirt">
+                    <label for="vv_in_orange_card">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink_card" name="buy_card" value="Card - Vincent Van-Dog in Pink Shirt">
+                    <label for="vv_in_pink_card">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow_card" name="buy_card" value="Card - Vincent Van-Dog in Yellow Shirt">
+                    <label for="vv_in_yellow_card">Yellow Shirt</label>
+                    <input type="radio" id="vv_life_card" name="buy_card" value="Card - Vincent Van-Dog Life Photo">
+                    <label for="vv_life_card">Life Photo</label>
+                    <br><br>
+                    <span>Number:</span>
+                    <input type="text" id="card_number" name="card_number"><br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                </form>
             </div>
-            <div>
-                <img src="images/vv_in_yellow.jpg" alt="A poster of Vincent Van-Dog in yellow shirt" class="poster-size">
-                <!-- <p>Vincent Van-Dog in Yellow Shirt<br>Poster | CAD $8.00</p> -->
+            <div class="margin-auto">
+                <img src="images/vv_in_yellow_nb.jpg" alt="A notebook of Vincent Van-Dog portrait" class="nb-size" name="slides-nb" id="slides-nb">
             </div>
             <div>
                 <h3>Specifications - Notebook</h3><br>
@@ -95,11 +151,26 @@
                     <li>200 pages (100 sheets) of 11 x 8.5 in, college ruled, high quality paper resists ink bleed.</li>
                     <li>Water resistant poly covers protect sheets.</li>
                     <li>Perfect for any to-do list, morning pages, creative writing, or note-taking.</li>
-                </ul>
+                </ul><br>
+                <span>Price : CAD $10.50</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange_nb" name="buy_nb" value="Notebook - Vincent Van-Dog in Orange Shirt">
+                    <label for="vv_in_orange_nb">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink_nb" name="buy_nb" value="Notebook - Vincent Van-Dog in Pink Shirt">
+                    <label for="vv_in_pink_nb">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow_nb" name="buy_nb" value="Notebook - Vincent Van-Dog in Yellow Shirt">
+                    <label for="vv_in_yellow_nb">Yellow Shirt</label>
+                    <input type="radio" id="vv_life_nb" name="buy_nb" value="Notebook - Vincent Van-Dog Life Photo">
+                    <label for="vv_life_nb">Life Photo</label>
+                    <br><br>
+                    <span>Number:</span>
+                    <input type="text" id="nb_number" name="nb_number"><br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                </form>
             </div>
-            <div>
-                <img src="images/vv_life.jpg" alt="A poster of Vincent Van-Dog in life" class="poster-size">
-                <!-- <p>Vincent Van-Dog Life Photo<br>Poster | CAD $8.00</p> -->
+            <div class="margin-auto">
+                <img src="images/vv_life_kc.jpg" alt="A kaychain of Vincent Van-Dog portrait" class="kc-size" name="slides-kc" id="slides-kc">
             </div>
             <div>
                 <h3>Specifications - Key Chain</h3><br>
@@ -107,7 +178,23 @@
                     <li>The size is 30*30mm which contains lovely Vincent Van-Dog photos.</li>
                     <li>Made of stainless steel and the soldered and firmly close connecting ring.</li>
                     <li>Ideal gifts for many occasions, such as daily wear at home or office, party, club, engagement, wedding, congratulations for new job, etc. </li>
-                </ul>
+                </ul><br>
+                <span>Price : CAD $2.99</span><br><br>
+                <form>
+                    <span>Version:</span><br>
+                    <input type="radio" id="vv_in_orange_kc" name="buy_kc" value="Keychain - Vincent Van-Dog in Orange Shirt">
+                    <label for="vv_in_orange_kc">Orange Shirt</label>
+                    <input type="radio" id="vv_in_pink_kc" name="buy_kc" value="Keychain - Vincent Van-Dog in Pink Shirt">
+                    <label for="vv_in_pink_kc">Pink Shirt</label><br id="product-large-screen">
+                    <input type="radio" id="vv_in_yellow_kc" name="buy_kc" value="Keychain - Vincent Van-Dog in Yellow Shirt">
+                    <label for="vv_in_yellow_kc">Yellow Shirt</label>
+                    <input type="radio" id="vv_life_kc" name="buy_kc" value="Keychain - Vincent Van-Dog Life Photo">
+                    <label for="vv_life_kc">Life Photo</label>
+                    <br><br>
+                    <span>Number:</span>
+                    <input type="text" id="kc_number" name="kc_number"><br><br>
+                    <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
+                </form>
             </div>
         </main>
 

@@ -43,6 +43,18 @@ footer {
     height: 275px;
     margin: 40px 0px;
 }
+.margin-auto {
+    margin: auto;
+}
+.submit {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #f39696;
+    border: none;
+}
 
 /* one element by id */
 #shop {
@@ -54,48 +66,64 @@ footer {
 }
 
 #shop div {
+    /* background-color: #f7f5f6; */
     width: 300px;
     height: 400px;
     margin: 20px;
-    /* background-color: #f7f5f6; */
     text-align: center;
 }
 
 #product {
     display: grid;
-    grid-template: repeat(4, 400px) / 30% 55%;
+    grid-template: repeat(4, 360px) / 30% 55%;
     grid-gap: 40px;
     justify-content: center;
     margin: 20px 0px;
 }
 
 #product div {
-    background-color: #f7f5f6;
+    /* background-color: #f7f5f6; */
     line-height: 130%;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
 
 #product div ul {
-    padding-left: 25px;
-    color: #495176;
+    padding-left: 30px;
+}
+
+#product div span {
+    font-weight: bold;
+}
+
+#product div form label {
+    display: inline-block;
+    width: 117px;
+    margin-top: 5px;
+}
+#product-large-screen {
+    display: none;
 }
 
 
 /* large screen */
-@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+    #product-large-screen {
+        display: inline;
+    }
+}
 /* medium screen */
 @media only screen and (max-width: 768px) {
     #product {
         display: grid;
-        grid-template: repeat(8, 400px) / 80%;
-        grid-gap: 30px;
+        grid-template: repeat(8, 380px) / 80%;
+        grid-gap: 20px;
         justify-content: center;
         margin: 20px 0px;
     }
     
     #product div {
-        background-color: #f7f5f6;
+        /* background-color: #f7f5f6; */
         line-height: 130%;
     }
 }
@@ -108,7 +136,16 @@ footer {
         font-size: 14px;
     }
     #product div {
-        background-color: #f7f5f6;
+        /* background-color: #f7f5f6; */
         font-size: 14px;
+    }
+    .submit {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background-color: #f39696;
+        border: none;
     }
 }
