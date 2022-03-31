@@ -225,6 +225,10 @@ input[type="radio"]:checked {
     background-color: #f39696;
 }
 
+div.resultTest {
+    margin-top: 50px;
+}
+
 footer {
     background-color: #ff5757;
     color: white;
