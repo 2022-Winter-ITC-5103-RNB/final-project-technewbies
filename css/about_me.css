@@ -191,14 +191,6 @@ main {
     font-size: 130%;
 }
 
-footer {
-    background-color: #ff5757;
-    color: white;
-    text-align: center;
-    padding: 10px 0px;
-    margin-top: auto;
-}
-
 /* The code below is regarding responsive design */
 
 /* Tablet screen */
@@ -206,16 +198,12 @@ footer {
 @media (max-width: 768px) {
 
     h1.titleAbout {
-        font-size: 150%;
+        font-size: 300%;
         margin-right: 30px;
     }
 
     h2.briefHistory {
-        font-size: 100%;
-    }
-
-    footer {
-        font-size: 75%;
+        font-size: 300%;
     }
 }
 
@@ -223,17 +211,12 @@ footer {
 
 @media (max-width: 576px) {
     h1.titleAbout {
-        font-size: 130%;
+        font-size: 300%;
         margin-right: 30px;
     }
 
     h1.briefHistory {
         font-size: 70%;
-    }
-
-
-    footer {
-        font-size: 50%;
     }
 
 }
