@@ -1,7 +1,7 @@
 const rightAnswers = ['A', 'A', 'A', 'A', 'A'];
 const form = document.querySelector('.form_test'); 
 const resultTest = document.querySelector('.resultTest'); 
-const removeBtn = document.querySelector('#testButton');
+//const removeBtn = document.querySelector('#testButton');
 let finalResult = 0;
 
 
@@ -17,12 +17,15 @@ function calcResult() {
         }
     }
 
-    resultTest.innerHTML +=`<p class="finishTest">Your results are: ${finalResult}/5</p>`; 
-    removeBtn.parentElement.removeChild(removeBtn);
+    resultTest.innerHTML +=`<p class="finishTest">Your results are<br> ${finalResult}/5</p>`; 
+    
+    let checkBtn = document.querySelector('#testButton');
+    let retryBtn = document.createElement("button")
+    retryBtn.innerHTML = `<button id="retryBtn">Retry Test</button>`;
+    checkBtn.parentNode.replaceChild(retryBtn, checkBtn);
 
-    document.createElement("button")
-
-
+   //checkBtn.childNodes[0].textContent = "Retry test";//Another way to change the button
+   //removeBtn.parentElement.removeChild(removeBtn);//Removing button
 }
 
 

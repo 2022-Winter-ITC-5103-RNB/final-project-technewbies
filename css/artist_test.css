@@ -181,7 +181,6 @@ fieldset.artistTest {
 
 legend.testLegend {
     background: #f39696;
-    ;
     color: #ffffff;
     padding: 5px 10px;
     font-size: 32px;
@@ -208,33 +207,59 @@ input[type="radio"]:checked {
     background-color: #ff5757;
 }
 
-#testButton {
-    margin: 40px 0 10px 0;
+div.resultDiv {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: white;
+}
+
+button#testButton{
     color: #ffffff;
     background-color: #ff5757;
+    font-size: 12px;
+    font-weight: bold;
     cursor: pointer;
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
-    padding: 10px 16px;
-    float: right;
+    padding: 20px 32px;
 }
 
-#testButton:hover,
-#testButton:focus {
+button#retryBtn {
+    color: #ffffff;
+    background-color: #ff5757;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 20px 32px;
+}
+
+button#testButton:hover,
+button#retryBtn:hover,
+button#testButton:focus,
+button#retryBtn:focus {
     background-color: #f39696;
 }
 
-div.resultTest {
-    margin-top: 50px;
-}
-
-footer {
-    background-color: #ff5757;
-    color: white;
+.finishTest {
+    background: #f39696;
+    color: black;
+    box-shadow: 0 0 0 5px #f8cbaa;
+    font-size: 15px;
     text-align: center;
-    padding: 10px 0px;
-    margin-top: auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 20px;
 }
 
 /* The code below is regarding responsive design */
@@ -243,25 +268,12 @@ footer {
 
 @media (max-width: 768px) {
 
-    h1.titletest {
-        font-size: 90%;
-    }
-
-    legend.testLegend {
-        font-size: 140%;
-
+    h1.titleTest {
+        font-size: 220%;
     }
 
     fieldset.artistTest {
-        font-size: 90%;
-    }
-
-    #testButton {
-        font-size: 90%;
-    }
-
-    footer {
-        font-size: 75%;
+        font-size: 310%;
     }
 }
 
@@ -269,26 +281,11 @@ footer {
 
 @media (max-width: 576px) {
 
-
     h1.titleTest {
-        font-size: 80%;
-    }
-
-    legend.testLegend {
-        font-size: 100%;
-
+        font-size: 180%;
     }
 
     fieldset.artistTest {
-        font-size: 80%;
+        font-size: 310%;
     }
-
-    #testButton {
-        font-size: 80%;
-    }
-
-    footer {
-        font-size: 50%;
-    }
-
 }
