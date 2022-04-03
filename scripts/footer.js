@@ -6,7 +6,7 @@ template.innerHTML = `
     <div class="footerContent">
         <div>
             <img src="./images/logo_dark.png" alt="logo" width="150px">
-            <p>flajdlfjal faj dflkajd flkja ldkfj alkfdj aklsdjf lkajsd flk klajds flkajdfiohdoihglkaejwlaorle kfa l ajlr joaidsj oiadsoifjoa efj</p>
+            <p>Vincent Van-Dog, the most talented artist in the universe! Enjoy the protfolio and thank you for liking me. Woof Woof!</p>
         </div>
         <div>
             <h4>SOCIALS</h4>
@@ -36,6 +36,8 @@ template.innerHTML = `
             <p>636 kitkat st, Mississauga</p>
             <p>M7H 2G5, ONTARIO</p>
             <P><em>ph: 998 837 124</em></P>
+            <br>
+            <p>And your heart &#129293;</p>
         </div>
     </div>
     <hr>
@@ -164,3 +166,10 @@ i {
 `;
 
 document.head.appendChild(style);
+
+// Footer template - script
+var sc = document.createElement("script");
+sc.setAttribute("src", "https://kit.fontawesome.com/c331e0ecf1.js");
+sc.setAttribute("type", "text/javascript");
+sc.setAttribute("crossorigin", "anonymous");
+document.head.appendChild(sc);
