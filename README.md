@@ -28,7 +28,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [X] Page 2: auto-play album for each series of product
 - [ ] Page 2: add to cart form; select item with actual picture showing
 - [ ] Page 2: add (+/-) button to increment number: https://css-tricks.com/number-increment-buttons/
-- [ ] All page: use js to display navbar and footer
+- [ ] All pages: use js to display navbar and footer
 
 ## Consistent style guide
 
@@ -40,12 +40,13 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 ## Learning curves and challenges
 
-- Set HTML content and CSS styles using JavaScript
+- Append HTML content, CSS styles, and scripts to document using JavaScript
 
 ## Resources
 
-- Set HTML content using JavaScript: https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
-- Set CSS styles using JavaScript: https://attacomsian.com/blog/javascript-set-css-styles
+- Append HTML content using JavaScript: https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
+- Append CSS styles using JavaScript: https://attacomsian.com/blog/javascript-set-css-styles
+- Append script using JavaScript: https://stackoverflow.com/questions/22211584/using-document-head-appendchild-to-append-a-script-tag-that-has-an-src-attribu
 - Center the main contents: https://www.w3.org/Style/Examples/007/center.en.html#block
 - CSS flexbox: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 - Find color: https://imagecolorpicker.com/
