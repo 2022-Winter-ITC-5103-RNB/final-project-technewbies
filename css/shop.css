@@ -12,12 +12,6 @@ hr {
     width: 80%;
     margin: auto;
 }
-footer {
-    background-color: #ff5757;
-    color: white;
-    text-align: center;
-    padding: 10px 0px;
-}
 
 /* elements by class */
 .header {
@@ -57,6 +51,7 @@ footer {
 }
 
 /* one element by id */
+/* shop.html - images */
 #shop {
     display: flex;
     flex-direction: row;
@@ -64,7 +59,6 @@ footer {
     align-content: center;
     justify-content: center;
 }
-
 #shop div {
     /* background-color: #f7f5f6; */
     width: 300px;
@@ -72,7 +66,37 @@ footer {
     margin: 20px;
     text-align: center;
 }
+#shopFilterBtn {
+    display: flex;
+    justify-content: center;
+}
+.filterDiv {
+    display: none;
+}
+.show {
+    display: block;
+}
+/* shop.html - style the filter buttons */
+.btn {
+    border: none;
+    outline: none;
+    width: 17%;
+    padding: 15px;
+    margin: 0px 5px;
+    font-size: 16px;
+    background-color: #f8cbaa;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #f39696;
+    color: white;
+}
+.btn.active {
+    background-color: #f39696;
+    color: white;
+}
 
+/* product.html - images & specification */
 #product {
     display: grid;
     grid-template: repeat(4, 360px) / 30% 55%;
@@ -80,22 +104,18 @@ footer {
     justify-content: center;
     margin: 20px 0px;
 }
-
 #product div {
     /* background-color: #f7f5f6; */
     line-height: 130%;
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
-
 #product div ul {
     padding-left: 30px;
 }
-
 #product div span {
     font-weight: bold;
 }
-
 #product div form label {
     display: inline-block;
     width: 117px;
@@ -121,7 +141,6 @@ footer {
         justify-content: center;
         margin: 20px 0px;
     }
-    
     #product div {
         /* background-color: #f7f5f6; */
         line-height: 130%;
