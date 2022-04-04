@@ -11,6 +11,20 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 ### Alvaro Beltran Caceres (N01511461)
 
 ### Andrea Cavalcanti Nascimento (N01526433)
+- [X] Fully functional web page with HTML, CSS and JavaScript
+- [X] Phase 1: about me page
+- [X] Phase 2: artist test page
+- [ ] Phase 3: visit us page
+
+## Learning curves and challenges
+- Set JS and its methods
+
+## Resources
+- https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+-  https://www.javascripttutorial.net/javascript-dom/javascript-replacechild/
+- https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
+- https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
+
 
 ### Mohammed Rehan Ali(N01512346)
 
