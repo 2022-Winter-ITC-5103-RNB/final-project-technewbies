@@ -29,11 +29,11 @@ template.innerHTML = `
         </div>
         <div>
             <h4>ADDRESS</h4>
-            <p>1730 dexter st, Etobicoke</p>
+            <p>1730 Briarwood Ave, Etobicoke</p>
             <p>M2F C49, ONTARIO</p>
             <P><em>ph: 938 837 124</em></P>
             <br>
-            <p>636 kitkat st, Mississauga</p>
+            <p>636 Douglas st, Mississauga</p>
             <p>M7H 2G5, ONTARIO</p>
             <P><em>ph: 998 837 124</em></P>
             <br>
