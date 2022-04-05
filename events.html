@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./assets/navbar/navbar.css" />
     <title>Contact US - Vincent Van-Dog</title>
   </head>
-  <body>
+  <body id="body">
     <nav class="nav">
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
@@ -63,7 +63,9 @@
           FFF is an event held during the summer. Have a great time with your family while meeting
           our little furry friends.
         </p>
-        <button class="btn-join" type="button"><a href="./services.html">Join Event </a></button>
+        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">
+          Join Event
+        </button>
       </span>
       <span class="card" id="card2">
         <img
@@ -150,5 +152,18 @@
         <p><em>&copy; 2022 Vincent-Van-Dog. All rights reserved.</em></p>
       </div>
     </footer>
+    <script src="./scripts/events.js"></script>
+
+    <div id="modalFFF" class="modal" type="noActive">
+      <div>
+        <h3>Farm Friends and Family</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eaque et accusantium
+          debitis distinctio illum!
+        </p>
+        <a href="">Join the Event</a>
+        <button onclick="modalOff()">X</button>
+      </div>
+    </div>
   </body>
 </html>
