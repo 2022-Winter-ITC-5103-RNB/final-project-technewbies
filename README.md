@@ -61,8 +61,6 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [ ] Page 2: add (+/-) button to increment number: https://css-tricks.com/number-increment-buttons/
 - [ ] All pages: use js to display navbar and footer
 
-
-
 ### Learning curves and challenges
 
 - Append HTML content, CSS styles, and scripts to document using JavaScript
