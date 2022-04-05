@@ -3,9 +3,11 @@
 ## Team Name: Tech Newbies
 
 ## Team Member:
+
 Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi Chen
 
 ## Consistent style guide
+
 - Same header, navigation, and footer components
 - Font family: Montserrat
 - Color palette: #ff5757 #f8cbaa #f39696 #7fbeb3 #495176 black white
@@ -13,50 +15,71 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Media query breakpoints: 576px, 768px, 1024px
 
 ## Alvaro Beltran Caceres (N01511461)
+
 ### Tasks
+
+- [x] Fully functional web page with HTML, CSS and JavaScript
+- [x] Phase 1: Services - Created a carousel with images of the services provide
+- [x] Phase 2: Events - Modal with "More Info" of each event. The information is been gatherer from an array of objects created in javascript and injected into the model
+- [ ] Phase 3: Contact Us
 -
+
 ### Learning curves and challenges
+
 -
+
 ### Resources
+
 -
 
 ## Andrea Cavalcanti Nascimento (N01526433)
+
 ### Tasks
-- [X] Fully functional web page with HTML, CSS and JavaScript
-- [X] Phase 1: about me page
-- [X] Phase 2: artist test page
+
+- [x] Fully functional web page with HTML, CSS and JavaScript
+- [x] Phase 1: about me page
+- [x] Phase 2: artist test page
 - [ ] Phase 3: visit us page
 
 ### Learning curves and challenges
+
 - Set JS and its methods
 
 ### Resources
+
 - https://www.w3schools.com/jsref/prop_html_innerhtml.asp
 - https://www.javascripttutorial.net/javascript-dom/javascript-replacechild/
 - https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
 - https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
 
-
 ## Mohammed Rehan Ali(N01512346)
+
 ### Tasks
+
 -
+
 ### Learning curves and challenges
+
 -
+
 ### Resources
+
 -
 
 ## Tuyi Chen (N01531425)
+
 ### Tasks
-- [X] Create and design basic layout and functions for peripheral products e-commerce (three pages): \
-** Page 1: overview shop page displaying all peripheral products \
-** Page 2: one page for a product detail \
-** Page 3: dummy shopping cart page
+
+- [x] Create and design basic layout and functions for peripheral products e-commerce (three pages): \
+       ** Page 1: overview shop page displaying all peripheral products \
+       ** Page 2: one page for a product detail \
+       \*\* Page 3: dummy shopping cart page
 
 - Advanced Features:
-- [X] Page 1: filter elements by product type
+- [x] Page 1: filter elements by product type
 - [ ] Page 1: decrease the loading page time or display an animation when loading
 - [ ] Page 1: click product and point to specific position on page 2
-- [X] Page 2: auto-play album for each series of product
+- [x] Page 2: auto-play album for each series of product
 - [ ] Page 2: add to cart form; select item with actual picture showing
 - [ ] Page 2: add (+/-) button to increment number: https://css-tricks.com/number-increment-buttons/
 - [ ] All pages: use js to display navbar and footer
@@ -81,4 +104,4 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
   ** https://unsplash.com/photos/8qq_QbZDSxg \
   ** https://unsplash.com/photos/LxlQWbvPIvQ
 - Website content/layout references: \
-  ** https://www.tinika-illustrations.com/shop
+  \*\* https://www.tinika-illustrations.com/shop
