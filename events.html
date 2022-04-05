@@ -27,13 +27,13 @@
       </div>
 
       <div class="nav-links">
-        <a class="active" href="/home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="/porfolio.html">Portfolio</a>
-        <a href="/shopping.html">Shopping</a>
-        <a href="contactUs.html">Visit Us</a>
-        <a href="/events.html">Events</a>
-        <a href="/contact_us.html">Contact Us</a>
+        <a class="active" href="./home.html">Home</a>
+        <a href="./about_me.html">About</a>
+        <a href="./porfolio.html">Portfolio</a>
+        <a href="./shop.html">Shopping</a>
+        <a href="./visit_us.html">Visit Us</a>
+        <a href="./events.html">Events</a>
+        <a href="./contact_us.html">Contact Us</a>
       </div>
     </nav>
     <section class="hero" id="hero">
@@ -63,9 +63,7 @@
           FFF is an event held during the summer. Have a great time with your family while meeting
           our little furry friends.
         </p>
-        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">
-          Join Event
-        </button>
+        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">More Info</button>
       </span>
       <span class="card" id="card2">
         <img
@@ -75,11 +73,9 @@
         />
         <h3 class="card__title">Puppy fest</h3>
         <p class="card__text">
-          You like puppies? So do we, come join us this April 16th at High Park
+          You like puppies? So do we, come join us this Nov 10th at High Park
         </p>
-        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">
-          Join Event
-        </button>
+        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">More Info</button>
       </span>
       <span class="card" id="card3">
         <img
@@ -89,7 +85,7 @@
         />
         <h3 class="card__title">Comming Soon</h3>
         <p class="card__text">We are working in more events for you.....stay tuned</p>
-        <button class="btn-join" type="button" id="btn-!active">Join Event</button>
+        <button class="btn-join" type="button" id="btn-!active">More Info</button>
       </span>
       <span class="card" id="card4">
         <img
@@ -99,7 +95,7 @@
         />
         <h3 class="card__title">Comming Soon</h3>
         <p class="card__text">We are working in more events for you.....stay tuned</p>
-        <button class="btn-join" type="button" id="btn-!active">Join Event</button>
+        <button class="btn-join" type="button" id="btn-!active">More Info</button>
       </span>
     </section>
     <footer>
@@ -158,10 +154,11 @@
 
     <div id="modal" class="modal" type="noActive">
       <div id="modal" class="modal-content">
-        <h3 class="modal_title"></h3>
-        <p class="modal_description"></p>
-        <p class="modal_price"></p>
-        <a href="">Join the Event</a>
+        <h3 id="modal_name" class="modal_name"></h3>
+        <p id="modal_content" class="modal_content"></p>
+        <p id="modal_date" class="modal_date"></p>
+        <p id="modal_price" class="modal_price"></p>
+        <a id="modal_link" href="">Join the Event</a>
         <button onclick="modalOff()">X</button>
       </div>
     </div>
