@@ -68,7 +68,7 @@ footer {
 footer img {
     margin-bottom: 1rem;
 }
-.footerContent h4{
+.footerContent h4 {
     margin-bottom: 1.5rem;
 }
 .footerContent {
@@ -78,7 +78,6 @@ footer img {
     height: 85%;
     text-align: left;
 }
-
 .footerContent > div {
     color: #eee;
     margin: 2rem 1rem;
@@ -88,7 +87,6 @@ footer img {
     text-decoration: none;
     color: #ffecec;
 }
-
 .quickLinks {
     height: 20vh;
     margin-left: 0;
@@ -101,35 +99,26 @@ footer img {
     font-size: 1rem;
     color: #ffecec;
 }
-
 footer hr {
-     border: none;
-     height: .3px;
+    border: none;
+    height: .3px;
     margin: 0 2rem;
     background-color: #ffecec;
 }
-
 .copyRight {
     text-align: center;
     color: #ffecec;
     font-size: 0.9rem;
     padding: 0.8rem;
 }
-
 i {
     font-size: 2rem;
 }
 
-@media only screen and (max-width: 1024px) {
-    * {
-        font-size: 95%;
-    }
+@media only screen and (max-width: 1024px) { 
 }
 
-@media only screen and (max-width: 786px) {
-    * {
-        font-size: 75%;
-    }
+@media only screen and (max-width: 786px) { 
     main .content {
         margin:2rem;
     }
@@ -161,6 +150,12 @@ i {
     }
     main table {
         margin: 2rem 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    * {
+        font-size: 12px;
     }
 }
 `;

@@ -55,75 +55,166 @@
                 <p>
                     Handmade stationery, art prints & paintings.<br>
                     Free shipping in Canada on all orders over $59.
-                </p><br>
+                </p><br><br>
             </div>
-            <hr><br>
         </header>
 
+        <script>
+            window.onload = function() {
+                filterSelection("all");
+            }
+            
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    hideElements(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) showElements(x[i], "show");
+                }
+            }
+
+            // Show filtered elements
+            function showElements(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                    }
+                }
+            }
+
+            // Hide elements that are not selected
+            function hideElements(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current control button
+            var btnContainer = document.getElementById("shopFilterBtn");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        </script>
+
+        <div id="shopFilterBtn">
+            <button class="btn active" onclick="filterSelection('all')">Show all</button>
+            <button class="btn" onclick="filterSelection('poster')">Poster</button>
+            <button class="btn" onclick="filterSelection('card')">Card</button>
+            <button class="btn" onclick="filterSelection('notebook')">Notebook</button>
+            <button class="btn" onclick="filterSelection('keychain')">Key Chain</button>
+        </div><br><br>
+
         <main id="shop">
-            <div>
-                <img src="./images/vv_in_orange.jpg" alt="A poster of Vincent Van-Dog in orange shirt" class="poster-size">
-                <p>Vincent Van-Dog in Orange Shirt<br>Poster | CAD $8.00</p>
+            <div class="filterDiv poster">
+                <a href="./product.html">
+                    <img src="./images/vv_in_orange.jpg" alt="A poster of Vincent Van-Dog in orange shirt" class="poster-size">
+                    <p>Vincent Van-Dog in Orange Shirt<br>Poster | CAD $8.00</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_pink.jpg" alt="A poster of Vincent Van-Dog in pink shirt" class="poster-size">
-                <p>Vincent Van-Dog in Pink Shirt<br>Poster | CAD $8.00</p>
+            <div class="filterDiv poster">
+                <a href="./product.html">
+                    <img src="./images/vv_in_pink.jpg" alt="A poster of Vincent Van-Dog in pink shirt" class="poster-size">
+                    <p>Vincent Van-Dog in Pink Shirt<br>Poster | CAD $8.00</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_yellow.jpg" alt="A poster of Vincent Van-Dog in yellow shirt" class="poster-size">
-                <p>Vincent Van-Dog in Yellow Shirt<br>Poster | CAD $8.00</p>
+            <div class="filterDiv poster">
+                <a href="./product.html">
+                    <img src="./images/vv_in_yellow.jpg" alt="A poster of Vincent Van-Dog in yellow shirt" class="poster-size">
+                    <p>Vincent Van-Dog in Yellow Shirt<br>Poster | CAD $8.00</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_life.jpg" alt="A poster of Vincent Van-Dog in life" class="poster-size">
-                <p>Vincent Van-Dog Life Photo<br>Poster | CAD $8.00</p>
+            <div class="filterDiv poster">
+                <a href="./product.html">
+                    <img src="./images/vv_life.jpg" alt="A poster of Vincent Van-Dog in life" class="poster-size">
+                    <p>Vincent Van-Dog Life Photo<br>Poster | CAD $8.00</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_orange_card.jpg" alt="A card of Vincent Van-Dog in orange shirt" class="card-size">
-                <p>Vincent Van-Dog in Orange Shirt<br>Card | CAD $3.50</p>
+            <div class="filterDiv card">
+                <a href="./product.html">
+                    <img src="./images/vv_in_orange_card.jpg" alt="A card of Vincent Van-Dog in orange shirt" class="card-size">
+                    <p>Vincent Van-Dog in Orange Shirt<br>Card | CAD $3.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_pink_card.jpg" alt="A card of Vincent Van-Dog in pink shirt" class="card-size">
-                <p>Vincent Van-Dog in Pink Shirt<br>Card | CAD $3.50</p>
+            <div class="filterDiv card">
+                <a href="./product.html">
+                    <img src="./images/vv_in_pink_card.jpg" alt="A card of Vincent Van-Dog in pink shirt" class="card-size">
+                    <p>Vincent Van-Dog in Pink Shirt<br>Card | CAD $3.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_yellow_card.jpg" alt="A card of Vincent Van-Dog in yellow shirt" class="card-size">
-                <p>Vincent Van-Dog in Yellow Shirt<br>Card | CAD $3.50</p>
+            <div class="filterDiv card">
+                <a href="./product.html">
+                    <img src="./images/vv_in_yellow_card.jpg" alt="A card of Vincent Van-Dog in yellow shirt" class="card-size">
+                    <p>Vincent Van-Dog in Yellow Shirt<br>Card | CAD $3.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_life_card.jpg" alt="A card of Vincent Van-Dog life photo" class="card-size">
-                <p>Vincent Van-Dog Life Photo<br>Card | CAD $3.50</p>
+            <div class="filterDiv card">
+                <a href="./product.html">
+                    <img src="./images/vv_life_card.jpg" alt="A card of Vincent Van-Dog life photo" class="card-size">
+                    <p>Vincent Van-Dog Life Photo<br>Card | CAD $3.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_orange_nb.jpg" alt="A notebook of Vincent Van-Dog in orange shirt" class="nb-size">
-                <p>Vincent Van-Dog in Orange Shirt<br>Notebook | CAD $10.50</p>
+            <div class="filterDiv notebook">
+                <a href="./product.html">
+                    <img src="./images/vv_in_orange_nb.jpg" alt="A notebook of Vincent Van-Dog in orange shirt" class="nb-size">
+                    <p>Vincent Van-Dog in Orange Shirt<br>Notebook | CAD $10.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_pink_nb.jpg" alt="A notebook of Vincent Van-Dog in pink shirt" class="nb-size">
-                <p>Vincent Van-Dog in Pink Shirt<br>Notebook | CAD $10.50</p>
+            <div class="filterDiv notebook">
+                <a href="./product.html">
+                    <img src="./images/vv_in_pink_nb.jpg" alt="A notebook of Vincent Van-Dog in pink shirt" class="nb-size">
+                    <p>Vincent Van-Dog in Pink Shirt<br>Notebook | CAD $10.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_yellow_nb.jpg" alt="A notebook of Vincent Van-Dog in yellow shirt" class="nb-size">
-                <p>Vincent Van-Dog in Yellow Shirt<br>Notebook | CAD $10.50</p>
+            <div class="filterDiv notebook">
+                <a href="./product.html">
+                    <img src="./images/vv_in_yellow_nb.jpg" alt="A notebook of Vincent Van-Dog in yellow shirt" class="nb-size">
+                    <p>Vincent Van-Dog in Yellow Shirt<br>Notebook | CAD $10.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_life_nb.jpg" alt="A notebook of Vincent Van-Dog life photo" class="nb-size">
-                <p>Vincent Van-Dog Life Photo<br>Notebook | CAD $10.50</p>
+            <div class="filterDiv notebook">
+                <a href="./product.html">
+                    <img src="./images/vv_life_nb.jpg" alt="A notebook of Vincent Van-Dog life photo" class="nb-size">
+                    <p>Vincent Van-Dog Life Photo<br>Notebook | CAD $10.50</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_orange_kc.jpg" alt="A keychain of Vincent Van-Dog in orange shirt" class="kc-size">
-                <p>Vincent Van-Dog in Orange Shirt<br>Key Chain | CAD $2.99</p>
+            <div class="filterDiv keychain">
+                <a href="./product.html">
+                    <img src="./images/vv_in_orange_kc.jpg" alt="A keychain of Vincent Van-Dog in orange shirt" class="kc-size">
+                    <p>Vincent Van-Dog in Orange Shirt<br>Key Chain | CAD $2.99</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_pink_kc.jpg" alt="A keychain of Vincent Van-Dog in pink shirt" class="kc-size">
-                <p>Vincent Van-Dog in Pink Shirt<br>Key Chain | CAD $2.99</p>
+            <div class="filterDiv keychain">
+                <a href="./product.html">
+                    <img src="./images/vv_in_pink_kc.jpg" alt="A keychain of Vincent Van-Dog in pink shirt" class="kc-size">
+                    <p>Vincent Van-Dog in Pink Shirt<br>Key Chain | CAD $2.99</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_in_yellow_kc.jpg" alt="A keychain of Vincent Van-Dog in yellow shirt" class="kc-size">
-                <p>Vincent Van-Dog in Yellow Shirt<br>Key Chain | CAD $2.99</p>
+            <div class="filterDiv keychain">
+                <a href="./product.html">
+                    <img src="./images/vv_in_yellow_kc.jpg" alt="A keychain of Vincent Van-Dog in yellow shirt" class="kc-size">
+                    <p>Vincent Van-Dog in Yellow Shirt<br>Key Chain | CAD $2.99</p>
+                </a>
             </div>
-            <div>
-                <img src="./images/vv_life_kc.jpg" alt="A keychain of Vincent Van-Dog life photo" class="kc-size">
-                <p>Vincent Van-Dog Life Photo<br>Key Chain | CAD $2.99</p>
+            <div class="filterDiv keychain">
+                <a href="./product.html">
+                    <img src="./images/vv_life_kc.jpg" alt="A keychain of Vincent Van-Dog life photo" class="kc-size">
+                    <p>Vincent Van-Dog Life Photo<br>Key Chain | CAD $2.99</p>
+                </a>
             </div>
         </main>
 
