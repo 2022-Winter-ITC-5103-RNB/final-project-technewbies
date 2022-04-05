@@ -55,7 +55,6 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Advanced Features:
 - [X] Page 1: filter elements by product type
 - [ ] Page 1: decrease the loading page time or display an animation when loading
-- [ ] Page 1: add "Quick View | Add to Cart" for each product
 - [ ] Page 1: click product and point to specific position on page 2
 - [X] Page 2: auto-play album for each series of product
 - [ ] Page 2: add to cart form; select item with actual picture showing

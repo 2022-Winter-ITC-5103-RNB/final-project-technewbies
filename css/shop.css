@@ -145,18 +145,31 @@ hr {
         /* background-color: #f7f5f6; */
         line-height: 130%;
     }
-}
-/* small screen */
-@media only screen and (max-width: 576px) {
     h1 {
         font-size: 22px;
     }
     p {
-        font-size: 14px;
+        font-size: 15px;
     }
+}
+/* small screen */
+@media only screen and (max-width: 576px) {
     #product div {
         /* background-color: #f7f5f6; */
         font-size: 14px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .btn {
+        border: none;
+        outline: none;
+        width: fit-content;
+        padding: 5px;
+        margin: 0px 3px;
+        font-size: 14px;
+        background-color: #f8cbaa;
+        cursor: pointer;
     }
     .submit {
         width: 100px;
