@@ -77,7 +77,9 @@
         <p class="card__text">
           You like puppies? So do we, come join us this April 16th at High Park
         </p>
-        <button class="btn-join" type="button">Join Event</button>
+        <button id="event-btn" class="btn-join" type="button" onclick="modalOn()">
+          Join Event
+        </button>
       </span>
       <span class="card" id="card3">
         <img
@@ -154,13 +156,11 @@
     </footer>
     <script src="./scripts/events.js"></script>
 
-    <div id="modalFFF" class="modal" type="noActive">
-      <div>
-        <h3>Farm Friends and Family</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eaque et accusantium
-          debitis distinctio illum!
-        </p>
+    <div id="modal" class="modal" type="noActive">
+      <div id="modal" class="modal-content">
+        <h3 class="modal_title"></h3>
+        <p class="modal_description"></p>
+        <p class="modal_price"></p>
         <a href="">Join the Event</a>
         <button onclick="modalOff()">X</button>
       </div>
