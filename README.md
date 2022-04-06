@@ -10,7 +10,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 - Same header, navigation, and footer components
 - Font family: Montserrat
-- Color palette: #ff5757 #f8cbaa #f39696 #7fbeb3 #495176 black white
+- Color palette: #ff5757 #f8cbaa #ffecec #f39696 #7fbeb3 #495176 black white
 - Naming convention: Vincent Van-Dog | <page name> for head title, i.e Vincent Van-Dog | Shop
 - Media query breakpoints: 576px, 768px, 1024px
 
@@ -22,7 +22,6 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [x] Phase 1: Services - Created a carousel with images of the services provide
 - [x] Phase 2: Events - Modal with "More Info" of each event. The information is been gatherer from an array of objects created in javascript and injected into the model
 - [ ] Phase 3: Contact Us
--
 
 ### Learning curves and challenges
 
@@ -70,10 +69,10 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 ### Tasks
 
-- [x] Create and design basic layout and functions for peripheral products e-commerce (three pages): \
-       ** Page 1: overview shop page displaying all peripheral products \
-       ** Page 2: one page for a product detail \
-       \*\* Page 3: dummy shopping cart page
+- Create and design basic layout and functions for peripheral products e-commerce (three pages):
+- [x] Page 1: overview shop page displaying all peripheral products
+- [x] Page 2: one page for a product detail
+- [ ] Page 3: dummy shopping cart page
 
 - Advanced Features:
 - [x] Page 1: filter elements by product type
@@ -82,7 +81,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [x] Page 2: auto-play album for each series of product
 - [ ] Page 2: add to cart form; select item with actual picture showing
 - [ ] Page 2: add (+/-) button to increment number: https://css-tricks.com/number-increment-buttons/
-- [ ] All pages: use js to display navbar and footer
+- [x] All pages: use js to display navbar and footer
 
 ### Learning curves and challenges
 
@@ -104,4 +103,4 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
   ** https://unsplash.com/photos/8qq_QbZDSxg \
   ** https://unsplash.com/photos/LxlQWbvPIvQ
 - Website content/layout references: \
-  \*\* https://www.tinika-illustrations.com/shop
+  ** https://www.tinika-illustrations.com/shop
