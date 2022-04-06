@@ -92,18 +92,12 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
-    // * {
-    //     font-size: 95%;
-    // }
 }
 
 @media only screen and (max-width: 768px) {
-    // * {
-    //     font-size: 75%;
-    // }
 }
   
-@media (max-width:600px) {
+@media (max-width:576px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
