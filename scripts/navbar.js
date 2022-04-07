@@ -1,7 +1,7 @@
 // Navbar template - html
-const template = document.createElement('template');
+const navbar_template = document.createElement('template');
 
-template.innerHTML = `
+navbar_template.innerHTML = `
 <nav class="nav">
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
@@ -29,12 +29,12 @@ template.innerHTML = `
 </nav>
 `;
 
-document.body.appendChild(template.content);
+document.body.appendChild(navbar_template.content);
 
 // Navbar template - css
-const style = document.createElement('style');
+const navbar_style = document.createElement('style');
 
-style.innerHTML = `
+navbar_style.innerHTML = `
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 * {
@@ -46,7 +46,6 @@ style.innerHTML = `
 
 body {
     margin: 0px;
-    font-family: 'segoe ui';
 }
 
 .nav {
@@ -97,7 +96,7 @@ body {
 @media only screen and (max-width: 768px) {
 }
   
-@media (max-width:576px) {
+@media only screen and (max-width: 576px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -154,11 +153,11 @@ body {
 }
 `;
 
-document.head.appendChild(style);
+document.head.appendChild(navbar_style);
 
 // Navbar template - script
-var sc = document.createElement("script");
-sc.setAttribute("src", "https://kit.fontawesome.com/c331e0ecf1.js");
-sc.setAttribute("type", "text/javascript");
-sc.setAttribute("crossorigin", "anonymous");
-document.head.appendChild(sc);
+var navbar_sc = document.createElement("script");
+navbar_sc.setAttribute("src", "https://kit.fontawesome.com/c331e0ecf1.js");
+navbar_sc.setAttribute("type", "text/javascript");
+navbar_sc.setAttribute("crossorigin", "anonymous");
+document.head.appendChild(navbar_sc);

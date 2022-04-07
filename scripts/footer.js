@@ -1,7 +1,7 @@
 // Footer template - html
-const template = document.createElement('template');
+const footer_template = document.createElement('template');
 
-template.innerHTML = `
+footer_template.innerHTML = `
 <footer>
     <div class="footerContent">
         <div>
@@ -47,12 +47,12 @@ template.innerHTML = `
 </footer>
 `;
 
-document.body.appendChild(template.content);
+document.body.appendChild(footer_template.content);
 
 // Footer template - css
-const style = document.createElement('style');
+const footer_style = document.createElement('style');
 
-style.innerHTML = `
+footer_style.innerHTML = `
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
 
 * {
@@ -160,11 +160,11 @@ i {
 }
 `;
 
-document.head.appendChild(style);
+document.head.appendChild(footer_style);
 
 // Footer template - script
-var sc = document.createElement("script");
-sc.setAttribute("src", "https://kit.fontawesome.com/c331e0ecf1.js");
-sc.setAttribute("type", "text/javascript");
-sc.setAttribute("crossorigin", "anonymous");
-document.head.appendChild(sc);
+var footer_sc = document.createElement("script");
+footer_sc.setAttribute("src", "https://kit.fontawesome.com/c331e0ecf1.js");
+footer_sc.setAttribute("type", "text/javascript");
+footer_sc.setAttribute("crossorigin", "anonymous");
+document.head.appendChild(footer_sc);

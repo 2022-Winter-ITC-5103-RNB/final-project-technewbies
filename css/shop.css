@@ -1,4 +1,7 @@
 /* elements by type */
+* {
+    font-family: "Montserrat", sans-serif;
+}
 header {
     text-align: center;
     margin: 40px 0px;
@@ -9,7 +12,6 @@ a {
 }
 p {
     line-height: 130%;
-    font-family: "Montserrat", sans-serif;
 }
 hr {
     border-top: 3px solid #f8cbaa;
@@ -108,7 +110,6 @@ hr {
 #product div {
     /* background-color: #f7f5f6; */
     line-height: 130%;
-    font-family: "Montserrat", sans-serif;
     font-size: 16px;
 }
 #product div ul {
