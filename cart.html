@@ -7,24 +7,41 @@
         <meta name="keywords" content="Vincent Van-Dog, shop, souvenir, poster, notebook, card, key chain">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./css/shop.css">
+        <script src="./scripts/cart.js"></script>
     </head>
     
     <body>
         <script src="./scripts/navbar.js"></script>
         <header>
-            <h1>Welcome to Vincent Van-Dog's Shop</h1><br>
+            <h1>Vincent Van-Dog's Shopping Cart</h1><br>
             <p>
                 Handmade stationery, art prints & paintings.<br>
                 Free shipping in Canada on all orders over $59.
-            </p>
+            </p><br>
+            <hr>
         </header>
 
-        <main id="cart">
-            <div>
-                <img src="./images/vv_in_orange.jpg" alt="A poster of Vincent Van-Dog in orange shirt" class="poster-size">
-                <p>Vincent Van-Dog in Orange Shirt<br>Poster | CAD $8.00</p>
+        <form>
+            <div id="cart">
+                <div id="cart-product">
+                    <!-- <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> I have a bike</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> I have a car</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> I have a boat</label><br>
+                    <img src="./images/vv_in_orange.jpg" alt="A poster of Vincent Van-Dog in orange shirt" class="poster-size">
+                    <p>Vincent Van-Dog in Orange Shirt<br>Poster | CAD $8.00</p> -->
+                </div>
+                <div id="cart-sidebar">
+                    <p>
+                        Subtotal (0 item): CAD $0.00<br>
+                        GST/HST: CAD $0.00<br>
+                        Total: CAD $0.00
+                    </p>
+                </div>
             </div>
-        </main>
+        </form>
 
         <script src="./scripts/footer.js"></script>
     </body>

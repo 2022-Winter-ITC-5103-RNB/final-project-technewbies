@@ -81,12 +81,17 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [x] Page 2: auto-play album for each series of product
 - [x] Page 2: add to cart form; select item with actual picture showing
 - [x] Page 2: add (+/-) button to increase/decrease number
+- [ ] Page 2: alert box of dummy product details information
+- [ ] Page 3: show cart items and delete cart items using JavaScript
+- [ ] Page 3: calculate total price of cart by selecting items using JavaScript
+- [ ] Page 3: chain of alert boxes of dummy payment steps
 - [x] All pages: use js to display navbar and footer
 
 ### Learning curves and challenges
 
 - Append HTML content, CSS styles, and scripts to document using JavaScript
 - Hide input number arrows
+- Position elements fixed relative to parent
 
 ### Resources
 
@@ -99,6 +104,8 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Find color: https://imagecolorpicker.com/
 - Find emoji: https://emojiguide.org/
 - Hide input number arrows: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
+- Position elements fixed relative to parent: https://stackoverflow.com/questions/5209814/can-i-position-an-element-fixed-relative-to-parent
+
 - Image references: \
   ** https://unsplash.com/photos/M74Pihi2vz8 \
   ** https://unsplash.com/photos/PtfiHm18W0E \
