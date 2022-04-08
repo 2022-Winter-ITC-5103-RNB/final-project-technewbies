@@ -21,6 +21,7 @@ navbar_template.innerHTML = `
         <a href="./about_me.html" >About</a>
         <a href="./porfolio.html" >Portfolio</a>
         <a href="./shop.html" >Shopping</a>
+        <a href="./cart.html" >Cart</a>
         <a href="./events.html" >Events</a>
         <a href="./artist_test.html" >Artist Test</a>
         <a href="./visit_us.html" >Visit Us</a>

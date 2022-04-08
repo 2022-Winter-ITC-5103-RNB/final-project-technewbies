@@ -72,7 +72,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Create and design basic layout and functions for peripheral products e-commerce (three pages):
 - [x] Page 1: overview shop page displaying all peripheral products
 - [x] Page 2: one page for a product detail
-- [ ] Page 3: dummy shopping cart page
+- [x] Page 3: dummy shopping cart page
 
 - Advanced Features:
 - [x] Page 1: filter elements by product type
