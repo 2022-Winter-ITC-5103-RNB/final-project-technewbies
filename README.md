@@ -79,7 +79,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [ ] Page 1: decrease the loading page time or display an animation when loading
 - [ ] Page 1: click product and point to specific position on page 2
 - [x] Page 2: auto-play album for each series of product
-- [ ] Page 2: add to cart form; select item with actual picture showing
+- [x] Page 2: add to cart form; select item with actual picture showing
 - [x] Page 2: add (+/-) button to increase/decrease number
 - [x] All pages: use js to display navbar and footer
 
