@@ -82,7 +82,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [x] Page 2: add to cart form; select item with actual picture showing
 - [x] Page 2: add (+/-) button to increase/decrease number
 - [ ] Page 2: alert box of dummy product details information
-- [ ] Page 3: show cart items and delete cart items using JavaScript
+- [x] Page 3: show cart items and delete cart items using JavaScript
 - [ ] Page 3: calculate total price of cart by selecting items using JavaScript
 - [ ] Page 3: chain of alert boxes of dummy payment steps
 - [x] All pages: use js to display navbar and footer

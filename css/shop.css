@@ -71,6 +71,14 @@ hr {
     border: none;
     background-color: #ffecec;
 }
+.delete {
+    width: 150px;
+    height: 30px;
+    font-size: 16px;
+    color: white;
+    background-color: #f39696;
+    border: none;
+}
 .product_number {
     width: 70px;
     height: 30px;
@@ -161,14 +169,13 @@ hr {
     display: none;
 }
 
-/* cart.html - shopping */
+/* cart.html - shopping cart */
 #cart {
     display: flex;
     justify-content: center;
 }
 #cart-product {
     width: 55%;
-    background-color: antiquewhite;
 }
 #cart-product div {
     position: relative;
@@ -176,17 +183,22 @@ hr {
 #cart-product input {
     margin: 10px;
 }
-#cart-product span {
+#cart-product div section {
     position: absolute;
-    right: 20px;
-    top: 200px;
+    right: 0px;
+    top: 150px;
 }
 #cart-product img {
     margin-left: 35px;
 }
 #cart-sidebar {
     width: 30%;
-    background-color: aqua;
+    margin: 0px 20px;
+}
+#cart-sidebar div {
+    background-color: #ffecec;
+    padding: 20px;
+    margin: 0px 20px;
 }
 
 /* large screen */
@@ -208,10 +220,24 @@ hr {
         /* background-color: #f7f5f6; */
         line-height: 130%;
     }
-    #cart-product span {
-        position: absolute;
-        right: 0px;
-        top: 30px;
+    #cart-product div {
+        position: static;
+    }
+    #cart-product div section {
+        position: static;
+        font-size: 15px;
+    }
+    .hide-br {
+        display: none;
+    }
+    .delete {
+        width: 120px;
+        height: 30px;
+        color: white;
+        background-color: #f39696;
+        border: none;
+        margin-left: 30px;
+        font-size: 15px;
     }
     h1 {
         font-size: 22px;
@@ -232,12 +258,20 @@ hr {
         margin: auto;
     }
     #cart-product {
-        width: 100%;
-        background-color: antiquewhite;
+        width: 100%; 
+    }
+    #cart-product img {
+        margin-left: 10px;
+    }
+    .delete {
+        font-size: 14px;
+        width: 100px;
     }
     #cart-sidebar {
         width: 100%;
-        background-color: aqua;
+    }
+    #cart-sidebar p {
+        font-size: 14px;
     }
     h1 {
         font-size: 18px;
