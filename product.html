@@ -22,17 +22,23 @@
 
         <main id="product">
             <script>
+                // constants for show slide
+                let imgNo = 0;
+                let difference = 3;
+                let delay = 2500;
+                
                 let posterArray = ["./images/vv_in_orange.jpg", "./images/vv_in_pink.jpg", "./images/vv_in_yellow.jpg", "./images/vv_life.jpg"];
                 let cardArray = ["./images/vv_in_pink_card.jpg", "./images/vv_in_yellow_card.jpg", "./images/vv_life_card.jpg", "./images/vv_in_orange_card.jpg"];
                 let nbArray = ["./images/vv_in_yellow_nb.jpg", "./images/vv_life_nb.jpg", "./images/vv_in_orange_nb.jpg", "./images/vv_in_pink_nb.jpg"];
                 let kcArray = ["./images/vv_life_kc.jpg", "./images/vv_in_orange_kc.jpg", "./images/vv_in_pink_kc.jpg", "./images/vv_in_yellow_kc.jpg"];
 
-                let imgNo = 0;
-                let difference = posterArray.length - 1;
-                let delay = 2500;
-                setInterval('changeImages(1)', delay);
+                const myInterval = setInterval("showSlides(1)", delay);
 
-                function changeImages(direction) {
+                window.onload = function() {
+                    myInterval;
+                }
+                
+                function showSlides(direction) {
                     imgNo += direction;
                     if (imgNo > difference) {
                         imgNo = 0;
@@ -45,6 +51,28 @@
                     document.getElementById('slides-nb').src = nbArray[imgNo];
                     document.getElementById('slides-kc').src = kcArray[imgNo];
                 }
+
+                // increase/decrease number
+                function minusOne(id) {
+                    let number = parseInt(document.getElementById(id).value);
+                    if (number > 0) {
+                        number -= 1;
+                        document.getElementById(id).value = number;
+                    }
+                }
+
+                function plusOne(id) {
+                    let number = parseInt(document.getElementById(id).value) + 1;
+                    document.getElementById(id).value = number;
+                }
+
+                // show image of chosen radio item
+                function showImg(slideType, id) {
+                    document.getElementById(slideType).src = './images/' + id + '.jpg';
+                    clearInterval(myInterval);
+                }
+
+
             </script>
 
             <div class="margin-auto">
@@ -60,19 +88,20 @@
                 <span>Price : CAD $8.00</span><br><br>
                 <form>
                     <span>Version:</span><br>
-                    <input type="radio" id="vv_in_orange" name="buy_poster" value="Poster - Vincent Van-Dog in Orange Shirt">
+                    <input type="radio" id="vv_in_orange" name="buy_poster" value="Poster - Vincent Van-Dog in Orange Shirt" onclick="showImg('slides-poster', 'vv_in_orange')">
                     <label for="vv_in_orange">Orange Shirt</label>
-                    <input type="radio" id="vv_in_pink" name="buy_poster" value="Poster - Vincent Van-Dog in Pink Shirt">
+                    <input type="radio" id="vv_in_pink" name="buy_poster" value="Poster - Vincent Van-Dog in Pink Shirt" onclick="showImg('slides-poster', 'vv_in_pink')">
                     <label for="vv_in_pink">Pink Shirt</label><br id="product-large-screen">
-                    <input type="radio" id="vv_in_yellow" name="buy_poster" value="Poster - Vincent Van-Dog in Yellow Shirt">
+                    <input type="radio" id="vv_in_yellow" name="buy_poster" value="Poster - Vincent Van-Dog in Yellow Shirt" onclick="showImg('slides-poster', 'vv_in_yellow')">
                     <label for="vv_in_yellow">Yellow Shirt</label>
-                    <input type="radio" id="vv_life" name="buy_poster" value="Poster - Vincent Van-Dog Life Photo">
+                    <input type="radio" id="vv_life" name="buy_poster" value="Poster - Vincent Van-Dog Life Photo" onclick="showImg('slides-poster', 'vv_life')">
                     <label for="vv_life">Life Photo</label>
                     <br><br>
-                    <span>Number:</span>
-                    <input type="text" id="poster_number" name="poster_number"><br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('poster_number')">-</button>
+                    <input type="number" id="poster_number" name="poster_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('poster_number')">+</button>
+                    <br><br>
                     <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
-                    <!-- button property: onclick="myFunction()" -->
                 </form>
             </div>
             <div class="margin-auto">
@@ -88,17 +117,19 @@
                 <span>Price : CAD $3.50</span><br><br>
                 <form>
                     <span>Version:</span><br>
-                    <input type="radio" id="vv_in_orange_card" name="buy_card" value="Card - Vincent Van-Dog in Orange Shirt">
+                    <input type="radio" id="vv_in_orange_card" name="buy_card" value="Card - Vincent Van-Dog in Orange Shirt" onclick="showImg('slides-card', 'vv_in_orange_card')">
                     <label for="vv_in_orange_card">Orange Shirt</label>
-                    <input type="radio" id="vv_in_pink_card" name="buy_card" value="Card - Vincent Van-Dog in Pink Shirt">
+                    <input type="radio" id="vv_in_pink_card" name="buy_card" value="Card - Vincent Van-Dog in Pink Shirt" onclick="showImg('slides-card', 'vv_in_pink_card')">
                     <label for="vv_in_pink_card">Pink Shirt</label><br id="product-large-screen">
-                    <input type="radio" id="vv_in_yellow_card" name="buy_card" value="Card - Vincent Van-Dog in Yellow Shirt">
+                    <input type="radio" id="vv_in_yellow_card" name="buy_card" value="Card - Vincent Van-Dog in Yellow Shirt" onclick="showImg('slides-card', 'vv_in_yellow_card')">
                     <label for="vv_in_yellow_card">Yellow Shirt</label>
-                    <input type="radio" id="vv_life_card" name="buy_card" value="Card - Vincent Van-Dog Life Photo">
+                    <input type="radio" id="vv_life_card" name="buy_card" value="Card - Vincent Van-Dog Life Photo" onclick="showImg('slides-card', 'vv_life_card')">
                     <label for="vv_life_card">Life Photo</label>
                     <br><br>
-                    <span>Number:</span>
-                    <input type="text" id="card_number" name="card_number"><br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('card_number')">-</button>
+                    <input type="number" id="card_number" name="card_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('card_number')">+</button>
+                    <br><br>
                     <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
                 </form>
             </div>
@@ -124,8 +155,10 @@
                     <input type="radio" id="vv_life_nb" name="buy_nb" value="Notebook - Vincent Van-Dog Life Photo">
                     <label for="vv_life_nb">Life Photo</label>
                     <br><br>
-                    <span>Number:</span>
-                    <input type="text" id="nb_number" name="nb_number"><br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('nb_number')">-</button>
+                    <input type="number" id="nb_number" name="nb_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('nb_number')">+</button>
+                    <br><br>
                     <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
                 </form>
             </div>
@@ -151,8 +184,10 @@
                     <input type="radio" id="vv_life_kc" name="buy_kc" value="Keychain - Vincent Van-Dog Life Photo">
                     <label for="vv_life_kc">Life Photo</label>
                     <br><br>
-                    <span>Number:</span>
-                    <input type="text" id="kc_number" name="kc_number"><br><br>
+                    <button type="button" class="minus" name="minus" value="Minus One" onclick="minusOne('kc_number')">-</button>
+                    <input type="number" id="kc_number" name="kc_number" min="0" value="0" class="product_number">
+                    <button type="button" class="plus" name="plus" value="Plus One" onclick="plusOne('kc_number')">+</button>
+                    <br><br>
                     <button name="submit" class="submit" type="submit" value="Add to Cart">Add to Cart</button>
                 </form>
             </div>

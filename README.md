@@ -51,7 +51,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
 - https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
 
-## Mohammed Rehan Ali(N01512346)
+## Mohammed Rehan Ali (N01512346)
 
 ### Tasks
 
@@ -80,12 +80,13 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [ ] Page 1: click product and point to specific position on page 2
 - [x] Page 2: auto-play album for each series of product
 - [ ] Page 2: add to cart form; select item with actual picture showing
-- [ ] Page 2: add (+/-) button to increment number: https://css-tricks.com/number-increment-buttons/
+- [x] Page 2: add (+/-) button to increase/decrease number
 - [x] All pages: use js to display navbar and footer
 
 ### Learning curves and challenges
 
 - Append HTML content, CSS styles, and scripts to document using JavaScript
+- Hide input number arrows
 
 ### Resources
 
@@ -97,6 +98,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Filter elements: https://www.w3schools.com/howto/howto_js_filter_elements.asp
 - Find color: https://imagecolorpicker.com/
 - Find emoji: https://emojiguide.org/
+- Hide input number arrows: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
 - Image references: \
   ** https://unsplash.com/photos/M74Pihi2vz8 \
   ** https://unsplash.com/photos/PtfiHm18W0E \
