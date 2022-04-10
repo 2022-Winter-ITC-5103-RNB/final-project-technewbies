@@ -26,14 +26,14 @@
             <div id="cart">
                 <div id="cart-product"></div>
                 <div id="cart-sidebar">
-                    <div>
-                        <p>
-                            Subtotal (0 item): CAD $24.99<br>
-                            GST/HST: CAD $3.25<br>
-                            Total: CAD $28.24
-                        </p><br>
-                        <button name="submit" class="submit" type="submit" value="Place Order">Place Order</button>
-                    </div>
+                    <input type="checkbox" id="check-all" name="check-all" value="Check All" onclick="checkAll()">
+                    <label for="check-all" id="check-all-label">Select all items</label>
+                    <p id="subtotal">
+                        Subtotal (0 item): CAD $0.00<br>
+                        GST/HST: CAD $0.00<br>
+                        Total: CAD $0.00
+                    </p>
+                    <button name="submit" class="submit" type="submit" value="Checkout">CHECKOUT</button>
                 </div>
             </div>
         </form><br>
