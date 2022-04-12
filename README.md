@@ -106,6 +106,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Filter elements: https://www.w3schools.com/howto/howto_js_filter_elements.asp
 - Find color: https://imagecolorpicker.com/
 - Find emoji: https://emojiguide.org/
+- Get all checked checkbox value in JavaScript: https://www.javatpoint.com/how-to-get-all-checked-checkbox-value-in-javascript
 - Hide input number arrows: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
 - Position elements fixed relative to parent: https://stackoverflow.com/questions/5209814/can-i-position-an-element-fixed-relative-to-parent
 
