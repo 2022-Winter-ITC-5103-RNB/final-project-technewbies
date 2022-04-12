@@ -1,5 +1,5 @@
 
-
+//data
 const jsonData = [
   {
    "name":"Guernica",
@@ -39,25 +39,37 @@ const jsonData = [
      }
 ]
 
-const modal = document.getElementsByClassName('box');
+//dynamically loading porfolio images with names
+const grid = document.getElementById("grid");
+
+jsonData.forEach((e) => { 
+  let newBox = document.createElement('div');
+  newBox.classList.add("box");
+  let img = document.createElement('img');
+  img.src = e.imageLocatoin;
+  newBox.append(img);
+  newBox.append(e.name)
+  grid.append(newBox);
+});
+
+// add  a modal on click
+
+
+const box = document.getElementsByClassName('box');
 const modal_container = document.getElementById('modal-container');
 const close = document.getElementById('close');
-const currentSelection = document.getElementById("description") ;
+const descriptionForCurrentSelection = document.getElementById("description") ;
 const button = document.getElementById('viewDetails');
 
 
-
-for(let i = 0 ; i < modal.length ; i++) {
-    modal[i].addEventListener('click', () => {
-     currentSelection.innerText =  jsonData[i].description;
+for(let i = 0 ; i < box.length ; i++) {
+    box[i].addEventListener('click', () => {
+     descriptionForCurrentSelection.innerText =  jsonData[i].description;
   modal_container.classList.add("show");
-
   button.onclick =  () => {
     location.href = `./individual${i}.html`;
   };
     })
-
-
 }
 
 close.addEventListener('click', () => {
