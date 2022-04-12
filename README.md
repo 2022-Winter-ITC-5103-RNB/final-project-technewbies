@@ -38,7 +38,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [x] Fully functional web page with HTML, CSS and JavaScript
 - [x] Phase 1: about me page
 - [x] Phase 2: artist test page
-- [ ] Phase 3: visit us page
+- [x] Phase 3: visit us page
 
 ### Learning curves and challenges
 
@@ -50,6 +50,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - https://www.javascripttutorial.net/javascript-dom/javascript-replacechild/
 - https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
 - https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
+- https://api.jquery.com/click/
 
 ## Mohammed Rehan Ali (N01512346)
 
@@ -81,25 +82,27 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [x] Page 2: auto-play album for each series of product
 - [x] Page 2: add to cart form; select item with actual picture showing
 - [x] Page 2: add (+/-) button to increase/decrease number
-- [ ] Page 2: alert box of dummy product details information
-- [x] Page 3: show cart items and delete cart items using JavaScript
-- [ ] Page 3: calculate total price of cart by selecting items using JavaScript
-- [ ] Page 3: chain of alert boxes of dummy payment steps
+- [ ] Page 2: show alert boxes by clicking add-to-cart buttons
+- [x] Page 3: show cart items and delete cart items
+- [x] Page 3: select/unselect all cart items
+- [x] Page 3: calculate total price of cart by selecting items
+- [ ] Page 3: show alert boxes by clicking delete-item & checkout buttons
 - [x] All pages: use js to display navbar and footer
 
 ### Learning curves and challenges
 
+- CSS layout of flex, flexbox, grid, etc.
 - Append HTML content, CSS styles, and scripts to document using JavaScript
 - Hide input number arrows
 - Position elements fixed relative to parent
+- JavaScript ternary functions with multiple conditions
+- JavaScript break and continue statements
 
 ### Resources
 
 - Append HTML content using JavaScript: https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 - Append CSS styles using JavaScript: https://attacomsian.com/blog/javascript-set-css-styles
 - Append script using JavaScript: https://stackoverflow.com/questions/22211584/using-document-head-appendchild-to-append-a-script-tag-that-has-an-src-attribu
-- Center the main contents: https://www.w3.org/Style/Examples/007/center.en.html#block
-- CSS flexbox: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 - Filter elements: https://www.w3schools.com/howto/howto_js_filter_elements.asp
 - Find color: https://imagecolorpicker.com/
 - Find emoji: https://emojiguide.org/

@@ -195,10 +195,13 @@ hr {
     width: 30%;
     margin: 0px 20px;
 }
-#cart-sidebar div {
+#cart-sidebar {
+    margin: 0px 30px;
+}
+#cart-sidebar p {
     background-color: #ffecec;
     padding: 20px;
-    margin: 0px 20px;
+    margin: 20px 0px;
 }
 
 /* large screen */
