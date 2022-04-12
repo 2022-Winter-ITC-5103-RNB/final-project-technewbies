@@ -1,3 +1,43 @@
+//Array for handling active state of the navbar
+let linkList = [
+  {
+    link: 1,
+    isActive: "true",
+  },
+  {
+    link: 2,
+    isActive: "false",
+  },
+  {
+    link: 3,
+    isActive: "false",
+  },
+  {
+    link: 4,
+    isActive: "false",
+  },
+  {
+    link: 5,
+    isActive: "false",
+  },
+  {
+    link: 6,
+    isActive: "false",
+  },
+  {
+    link: 7,
+    isActive: "false",
+  },
+  {
+    link: 8,
+    isActive: "false",
+  },
+  {
+    link: 9,
+    isActive: "false",
+  },
+];
+
 // Navbar template - html
 const navbar_template = document.createElement("template");
 
@@ -17,15 +57,15 @@ navbar_template.innerHTML = `
         </label>
     </div>
     <div class="nav-links">
-        <a class="active"  href="./home.html">Home</a>
-        <a href="./about_me.html" >About</a>
-        <a href="./porfolio.html" >Portfolio</a>
-        <a href="./shop.html" >Shopping</a>
-        <a href="./cart.html" >Cart</a>
-        <a href="./events.html" >Events</a>
-        <a href="./artist_test.html" >Artist Test</a>
-        <a href="./visit_us.html" >Visit Us</a>
-        <a href="./contact_us.html" >Contact Us</a>
+        <a  id="nav-link" link="1" onclick="currentActiveLink()" active=${linkList[0].isActive}   href="./home.html">Home</a>
+        <a  id="nav-link" link="2" active=${linkList[1].isActive}  href="./about_me.html" >About</a>
+        <a  id="nav-link" link="3" active=${linkList[2].isActive}  href="./porfolio.html" >Portfolio</a>
+        <a  id="nav-link" link="4" active=${linkList[3].isActive}  href="./shop.html" >Shopping</a>
+        <a  id="nav-link" link="5" active=${linkList[4].isActive}  href="./cart.html" >Cart</a>
+        <a  id="nav-link" link="6" active=${linkList[5].isActive}  href="./events.html" >Events</a>
+        <a  id="nav-link" link="7" active=${linkList[6].isActive}  href="./artist_test.html" >Artist Test</a>
+        <a  id="nav-link" link="8" active=${linkList[7].isActive}  href="./visit_us.html" >Visit Us</a>
+        <a  id="nav-link" link="9" active=${linkList[8].isActive}  href="./contact_us.html" >Contact Us</a>
     </div>
 </nav>
 `;
@@ -93,6 +133,8 @@ body {
 .nav > #nav-check {
     display: none;
 }
+
+
 
 @media only screen and (max-width: 1060px) {
     .nav > .nav-links{
@@ -186,3 +228,20 @@ navbar_sc.setAttribute("src", "https://kit.fontawesome.com/c331e0ecf1.js");
 navbar_sc.setAttribute("type", "text/javascript");
 navbar_sc.setAttribute("crossorigin", "anonymous");
 document.head.appendChild(navbar_sc);
+
+const navLinks = document.querySelectorAll("#nav-link");
+
+// console.log(navLinks);
+let activeLink;
+navLinks.forEach((links) => {
+  links.addEventListener("click", (linkClicked) => {
+    activeLink = linkClicked.target.getAttribute("link");
+
+    linkList.forEach((linkInList) => {
+      linkInList.isActive = "false";
+    });
+    linkList[activeLink].isActive = "true";
+  });
+});
+
+function currentActiveLink() {}
