@@ -22,7 +22,7 @@ let smoothScroll = (duration) => {
     requestAnimationFrame(animation);
 }
 
-let logo = document.querySelector(".logo");
+let logo = document.querySelector(".home");
 
 logo.addEventListener('click', function() {
 smoothScroll(1500);
