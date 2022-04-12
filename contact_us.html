@@ -14,41 +14,34 @@
   </head>
 
   <body>
-    <nav class="nav">
-      <input type="checkbox" id="nav-check" />
-      <div class="nav-header">
-        <div class="nav-title">
-          <img src="./images/logo_org.png" alt="logo" />
-        </div>
-      </div>
-      <div class="nav-btn">
-        <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </div>
+    <!-- Start: Injecting Navbar with JS-->
+    <script src="./scripts/navbar.js"></script>
+    <!-- End: Injecting Navbar with JS-->
 
-      <div class="nav-links">
-        <a class="active" href="/home.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="/porfolio.html">Portfolio</a>
-        <a href="/shopping.html">Shopping</a>
-        <a href="contactUs.html">Visit Us</a>
-        <a href="/events.html">Events</a>
-        <a href="/contact_us.html">Contact Us</a>
-      </div>
-    </nav>
-    <section class="contactUs">
-      <div class="container">
+    <section id="contactUs" class="contactUs">
+      <div id="container" class="container">
         <img src="./images/vincent van-dog_contact_us.jpg" alt="image" />
-        <div class="container-text">
+        <div id="container-text" class="container-text">
           <h1>Hi, i'm <span>Vincent </span></h1>
           <h2>Woof! nothing i love more than meeting new people ... except for chasing cars</h2>
-
-          <input type="email" placeholder="Email address" />
-          <textarea class="textArea" name="" id="" cols="30" rows="5"></textarea>
-          <button type="submit" class="letsMeet">Let's meet!</button>
+          <div class="inputMail">
+            <input id="mail" type="email" placeholder="Email address" />
+            <h2 id="mail-error-message" aria-hidden="true"></h2>
+          </div>
+          <div class="inputText">
+            <textarea
+              id="message"
+              class="textArea"
+              name=""
+              cols="40"
+              rows="5"
+              maxlength="100"
+              wrap="off"
+            ></textarea>
+            <h2 id="text-char-count">0/100</h2>
+            <h2 id="text-error-message" aria-hidden="true"></h2>
+          </div>
+          <button type="submit" class="letsMeet" onclick="sendMessage()">Let's meet!</button>
         </div>
       </div>
     </section>
@@ -104,5 +97,6 @@
         <p><em>&copy; 2022 Vincent-Van-Dog. All rights reserved.</em></p>
       </div>
     </footer>
+    <script src="./scripts/contact_us.js"></script>
   </body>
 </html>

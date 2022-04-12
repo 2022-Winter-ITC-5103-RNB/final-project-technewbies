@@ -38,7 +38,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - [x] Fully functional web page with HTML, CSS and JavaScript
 - [x] Phase 1: about me page
 - [x] Phase 2: artist test page
-- [ ] Phase 3: visit us page
+- [x] Phase 3: visit us page
 
 ### Learning curves and challenges
 
@@ -50,6 +50,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - https://www.javascripttutorial.net/javascript-dom/javascript-replacechild/
 - https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
 - https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
+- https://api.jquery.com/click/
 
 ## Mohammed Rehan Ali (N01512346)
 

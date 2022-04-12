@@ -78,7 +78,8 @@ html {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 10px 40px 10px 10px;
+  padding: 0px 40px 10px 10px;
+  margin-top: -10px;
 }
 
 .contactUs .container-text h1 {
@@ -137,6 +138,35 @@ html {
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
+  margin-top: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Validation Messages of FORM */
+.invalid,
+#text-error-message {
+  margin-top: -5px;
+  position: absolute;
+  color: red;
+  font-size: 0.7rem !important;
+}
+.inputText {
+  margin-top: 15px;
+  position: relative;
+  display: flex;
+  justify-content: right;
+}
+#text-char-count {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: -5px;
+}
+#text-error-message {
+  bottom: -5px;
+  left: 0px;
 }
 
 @media (max-width: 1024px) {

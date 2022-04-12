@@ -1,185 +1,82 @@
-body {
-    background-color: #ffffff;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* Menu */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
-
-* {
-    padding: 0;
+/* hide input number arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
     margin: 0;
-    box-sizing: border-box;
-    font-family: Montserrat;
 }
 
-@media only screen and (max-width: 1024px) {
-    * {
-        font-size: 95%;
-    }
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
-@media only screen and (max-width: 768px) {
-    * {
-        font-size: 75%;
-    }
-}
-
-body {
-    margin: 0px;
-    font-family: 'segoe ui';
-}
-
-.nav {
-    padding: 5px 30px;
-    width: 100%;
-    background-color: #ffecec;
-    position: relative;
-}
-
-.nav>.nav-header {
-    display: inline;
-}
-
-.nav>.nav-header>.nav-title {
-    display: inline-block;
-}
-
-.nav>.nav-header>.nav-title>img {
-    width: 10rem;
-}
-
-.nav>.nav-btn {
-    display: none;
-}
-
-.nav>.nav-links {
-    display: inline;
-    float: right;
-    font-size: 1.1rem;
-}
-
-.nav>.nav-links>a {
-    display: inline-block;
-    margin-top: 0.4rem;
-    padding: 13px 10px 13px 10px;
-    text-decoration: none;
-    color: #000000;
-}
-
-.nav>.nav-links>a:hover {
-    background-color: #ff5757;
-    color: #ffecec;
-
-}
-
-.nav .active {
-    background-color: #ff5757;
-    color: #ffecec !important;
-}
-
-.nav>#nav-check {
-    display: none;
-}
-
-@media (max-width:600px) {
-    .nav>.nav-btn {
-        display: inline-block;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-    }
-
-    .nav>.nav-btn>label {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-    }
-
-    .nav>.nav-btn>label:hover,
-    .nav #nav-check:checked~.nav-btn>label {
-        background-color: #ffecec;
-        border-color: #ff5757;
-    }
-
-    .nav-btn span {
-        color: #ff5757;
-    }
-
-    .nav>.nav-links>a {
-        color: #ffecec;
-    }
-
-    .nav>.nav-btn>label>span {
-        display: block;
-        width: 25px;
-        height: 10px;
-        border-top: 2px solid #ff5757;
-    }
-
-    .nav>.nav-links {
-        z-index: 2;
-        position: absolute;
-        display: block;
-        width: 100%;
-        background-color: #ff5757;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
-        text-align: center;
-    }
-
-    .nav>.nav-links>a {
-        display: block;
-        width: 100%;
-    }
-
-    .nav>#nav-check:not(:checked)~.nav-links {
-        height: 0px;
-    }
-
-    .nav>#nav-check:checked~.nav-links {
-        padding: 4rem 0;
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-    }
+/* elements by type */
+* {
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Main */
 
 main {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    padding-top: 2em;
-    min-height: 100vh;
 }
 
 /* Visit Us page */
 
+.apptInformation {
+    display: flex;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-bottom: 50px;
+
+}
+
+.apptTitle {
+    margin-left: 30px;
+    flex: 1;
+    margin: 0 0 10px 10px;
+    display: inline-block;
+}
+
+.apptP {
+    margin: 10px;
+    width: 650px;
+}
+
+.imagesGallery {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    height: 300px;
+    width: 400px;
+}
+
 .sectionAppointment {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 20px;
+    display: inline-block;
     margin-left: 80px;
-  }
-  
-  fieldset.apptField {
+}
+
+form.appt {
+    display: none;
+}
+
+fieldset.apptField {
     border: none;
     max-width: 600px;
-    min-width: 600px;
+    min-width: 500px;
     width: 50%;
     margin: auto;
     margin-top: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
+    margin-left: 30px;
     padding: 16px;
-  }
-  
-  legend.apptLegend {
+}
+
+legend.apptLegend {
     background: #f39696;
     ;
     color: #ffffff;
@@ -190,13 +87,12 @@ main {
     margin-bottom: 30px;
     margin: 0;
     width: 80%;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  input[type="date"],
-  input[type="time"] {
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
     border: none;
     font-size: 16px;
     height: auto;
@@ -208,20 +104,19 @@ main {
     color: black;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
     margin-bottom: 30px;
-  }
-  
-  label.apptInfo {
+}
+
+label.apptInfo {
     display: flex;
     margin-bottom: 8px;
-  }
-  
-  label.apptSchedule {
+}
+
+label.apptSchedule {
     display: flex;
     margin-bottom: 8px;
-  }
-  
-  #apptButton {
-    padding: 18px 39px 18px 39px;
+}
+
+#apptButton {
     color: #FFF;
     background-color: #ff5757;
     cursor: pointer;
@@ -231,59 +126,84 @@ main {
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
-    width: 75%;
-    margin-bottom: 80px;
-    margin-left: 15px;
-  }
-  
-  #apptButton:hover,
-  #apptButton:focus {
-    background-color: #f39696;
-  }
-  
-  .apptInformation {
-    margin: 0 0 10px 10px;
-  }
-  
-  .apptP {
-    margin: 10px;
-    width: 650px;
-  }
-  
-  img.imagesGallery {
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 650px;
-    width: 650px;
-    height: auto;
-    margin-top: 40px;
-  }
-
-footer {
-    background-color: #ff5757;
-    color: white;
-    text-align: center;
-    padding: 10px 0px;
-    margin-top: auto;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
+
+#apptButton:hover,
+#apptButton:focus {
+    background-color: #f39696;
+}
+
+#secondButton {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding: 12px;
+    color: #FFF;
+    background-color: #ff5757;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+#secondButton:hover,
+#secondButton:focus {
+    background-color: #f39696;
+}
+
 
 /* The code below is regarding responsive design */
 
 /* Tablet screen */
 
-@media (max-width: 768px) {
-
-    footer {
-        font-size: 75%;
-    }
-}
 
 /* Mobile screen */
 
-@media (max-width: 576px) {
-
-    footer {
-        font-size: 50%;
+@media only screen and (max-width: 576px) {
+    .apptInformation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
+    .apptTitle {
+        text-align: center;
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 120px;
+    }
+
+    .apptP {
+        font-size: 120%;
+        padding-left: 50px;
+        padding-right: 155px;
+    }
+
+    .sectionAppointment {
+        margin-left: 70px;
+    }
+
+    #apptButton {
+        font-size: 150%;
+        padding-left: 130px;
+        padding-right: 130px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .apptInfo {
+        font-size: 120%;
+        margin-left: 40px;
+    }
+
+
 
 }
