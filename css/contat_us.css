@@ -143,6 +143,7 @@ html {
 
 textarea {
   resize: none;
+  width: 100%;
 }
 
 /* Validation Messages of FORM */
@@ -287,5 +288,6 @@ textarea {
   }
   .contactUs textarea {
     height: 50px;
+    column-rule-width: 50ch;
   }
 }

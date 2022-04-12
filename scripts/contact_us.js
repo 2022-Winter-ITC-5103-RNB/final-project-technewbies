@@ -37,6 +37,7 @@ function sendMessage() {
 
   //TextArea validation for empty
   if (message.textLength == 0) {
+    console.log("hola");
     text_error_message.textContent = "Message cannot be empty";
   } else {
     text_error_message.textContent = "";
