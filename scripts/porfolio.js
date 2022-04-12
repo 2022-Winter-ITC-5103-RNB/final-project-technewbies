@@ -53,7 +53,7 @@ for(let i = 0 ; i < modal.length ; i++) {
   modal_container.classList.add("show");
 
   button.onclick =  () => {
-    location.href = `../individual${i}.html`;
+    location.href = `./individual${i}.html`;
   };
     })
 
