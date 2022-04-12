@@ -11,9 +11,9 @@ navbar_template.innerHTML = `
     </div>
     <div class="nav-btn">
         <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="nav-hamb"></span>
+            <span class="nav-hamb"></span>
+            <span class="nav-hamb"></span>
         </label>
     </div>
     <div class="nav-links">
