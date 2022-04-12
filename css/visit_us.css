@@ -32,6 +32,14 @@ main {
 
 }
 
+h1 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 15px;
+}
+
 .apptTitle {
     margin-left: 30px;
     flex: 1;
@@ -164,31 +172,56 @@ label.apptSchedule {
 
 /* Tablet screen */
 
+@media only screen and (max-width: 768px) {
+    .imagesGallery {
+        width: 40%;
+        height: 20%;
+    }
+
+    h1 {        
+        font-size: 15px;
+    }
+    
+    p {       
+        font-size: 9px;
+    }
+
+    #apptButton {
+        font-size: 90%;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .apptInfo {
+        font-size: 90%;
+        margin-left: 40px;
+    }
+
+    .apptField {
+        padding-right: 120px;
+    }
+}
 
 /* Mobile screen */
 
 @media only screen and (max-width: 576px) {
     .apptInformation {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1 {        
+        font-size: 15px;
+    }
+    
+    p {       
+        font-size: 12px;
     }
 
     .apptTitle {
-        text-align: center;
-        display: inline-block;
         margin-top: 20px;
-        margin-right: 120px;
-    }
-
-    .apptP {
-        font-size: 120%;
-        padding-left: 50px;
-        padding-right: 155px;
-    }
-
-    .sectionAppointment {
-        margin-left: 70px;
     }
 
     #apptButton {
@@ -203,7 +236,5 @@ label.apptSchedule {
         font-size: 120%;
         margin-left: 40px;
     }
-
-
 
 }
