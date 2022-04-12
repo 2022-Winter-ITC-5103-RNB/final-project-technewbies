@@ -30,12 +30,12 @@ footer_template.innerHTML = `
         <div>
             <h4>ADDRESS</h4>
             <p>1730 Briarwood Ave, Etobicoke</p>
-            <p>M2F C49, ONTARIO</p>
-            <P><em>ph: 938 837 124</em></P>
+            <p>M6F K79, ONTARIO</p>
+            <P><em>ph: 984 334 2124</em></P>
             <br>
             <p>636 Douglas st, Mississauga</p>
-            <p>M7H 2G5, ONTARIO</p>
-            <P><em>ph: 998 837 124</em></P>
+            <p>L9Y 2TR, ONTARIO</p>
+            <P><em>ph: 655 977 144</em></P>
             <br>
             <p>And your heart &#129293;</p>
         </div>
