@@ -1,5 +1,5 @@
 // Navbar template - html
-const navbar_template = document.createElement('template');
+const navbar_template = document.createElement("template");
 
 navbar_template.innerHTML = `
 <nav class="nav">
@@ -33,7 +33,7 @@ navbar_template.innerHTML = `
 document.body.appendChild(navbar_template.content);
 
 // Navbar template - css
-const navbar_style = document.createElement('style');
+const navbar_style = document.createElement("style");
 
 navbar_style.innerHTML = `
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
@@ -54,6 +54,9 @@ body {
     width: 100%;
     background-color: #ffecec;
     position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .nav > .nav-header {
     display: inline;
@@ -70,7 +73,7 @@ body {
 .nav > .nav-links {
     display: inline;
     float: right;
-    font-size: 1.1rem;
+
 }
 .nav > .nav-links > a {
     display: inline-block;
@@ -91,12 +94,33 @@ body {
     display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1060px) {
+    .nav > .nav-links{
+        font-size: 0.9rem;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 950px) {
+    .nav > .nav-links{
+        font-size: 0.7rem;
+    }
 }
-  
+@media only screen and (max-width: 820px) {
+    .nav > .nav-links{
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .nav > .nav-links{
+        font-size: 0.4rem;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .nav > .nav-links{
+        font-size: 0.30rem;
+    }
+}
 @media only screen and (max-width: 576px) {
     .nav > .nav-btn {
       display: inline-block;
