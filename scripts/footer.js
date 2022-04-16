@@ -24,7 +24,7 @@ footer_template.innerHTML = `
                 <p><a href="./about_me.html">ABOUT</a></p>
                 <p><a href="./events.html">EVENTS</a></p>
                 <p><a href="./artist_test.html">ARTIST TEST</a></p>
-                <p><a href="./contact_us.html">CONTANCT US</a></p>
+                <p><a href="./contact_us.html">CONTACT US</a></p>
             </div>
         </div>
         <div>
