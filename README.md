@@ -6,6 +6,45 @@
 
 Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi Chen
 
+### Alvaro Beltran Caceres (N01511461)
+
+- [x] Fully functional web page with HTML, CSS and JavaScript
+- [x] Phase 1: Services - Created a carousel with images of the services provide
+- [x] Phase 2: Events - Modal with "More Info" of each event. The information is been gatherer from an array of objects created in javascript and injected into the model
+- [ ] Phase 3: Contact Us
+
+### Andrea Cavalcanti Nascimento (N01526433)
+
+- [x] Fully functional web page with HTML, CSS and JavaScript
+- [x] Phase 1: about me page
+- [x] Phase 2: artist test page
+- [x] Phase 3: visit us page
+
+### Mohammed Rehan Ali (N01512346)
+
+- 
+
+### Tuyi Chen (N01531425)
+
+1. Page 1 - shop.html: overview shop page displaying all peripheral products
+    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/shop.html
+    * JS function filterSelection() filters elements by product type
+    * JS function showElements() shows selected elements
+    * JS function hideElements() hides unselected elements
+2. Page 2 - product.html: one page for a product detail
+    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/product.html
+    * JS function showSlides() automatically displays product images
+    * JS function showImg() shows the image of chosen product
+3. Page 3 - cart.html: dummy shopping cart page
+    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/cart.html
+    * JS function updateCart() shows cart items from JS array
+    * JS function deleteItem() deletes an item from shopping cart
+    * JS function checkAll() can select/unselect all cart items
+    * JS function calculation() calculates subtotal, tax, and total price of selected items
+    * JS function minusOne() decreases the number of products by one and the lower boundary is zero
+    * JS function plusOne() increases the number of products by one
+
+
 ## Consistent style guide
 
 - Same header, navigation, and footer components
@@ -14,82 +53,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Naming convention: Vincent Van-Dog | <page name> for head title, i.e Vincent Van-Dog | Shop
 - Media query breakpoints: 576px, 768px, 1024px
 
-## Alvaro Beltran Caceres (N01511461)
-
-### Tasks
-
-- [x] Fully functional web page with HTML, CSS and JavaScript
-- [x] Phase 1: Services - Created a carousel with images of the services provide
-- [x] Phase 2: Events - Modal with "More Info" of each event. The information is been gatherer from an array of objects created in javascript and injected into the model
-- [ ] Phase 3: Contact Us
-
-### Learning curves and challenges
-
--
-
-### Resources
-
--
-
-## Andrea Cavalcanti Nascimento (N01526433)
-
-### Tasks
-
-- [x] Fully functional web page with HTML, CSS and JavaScript
-- [x] Phase 1: about me page
-- [x] Phase 2: artist test page
-- [x] Phase 3: visit us page
-
-### Learning curves and challenges
-
-- Set JS and its methods
-
-### Resources
-
-- https://www.w3schools.com/jsref/prop_html_innerhtml.asp
-- https://www.javascripttutorial.net/javascript-dom/javascript-replacechild/
-- https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
-- https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
-- https://api.jquery.com/click/
-
-## Mohammed Rehan Ali (N01512346)
-
-### Tasks
-
--
-
-### Learning curves and challenges
-
--
-
-### Resources
-
--
-
-## Tuyi Chen (N01531425)
-
-### Tasks
-
-- Create and design basic layout and functions for peripheral products e-commerce (three pages):
-- [x] Page 1: overview shop page displaying all peripheral products
-- [x] Page 2: one page for a product detail
-- [x] Page 3: dummy shopping cart page
-
-- Advanced Features:
-- [x] Page 1: filter elements by product type
-- [ ] Page 1: decrease the loading page time or display an animation when loading
-- [ ] Page 1: click product and point to specific position on page 2
-- [x] Page 2: auto-play album for each series of product
-- [x] Page 2: add to cart form; select item with actual picture showing
-- [x] Page 2: add (+/-) button to increase/decrease number
-- [ ] Page 2: show alert boxes by clicking add-to-cart buttons
-- [x] Page 3: show cart items and delete cart items
-- [x] Page 3: select/unselect all cart items
-- [x] Page 3: calculate total price of cart by selecting items
-- [ ] Page 3: show alert boxes by clicking delete-item & checkout buttons
-- [x] All pages: use js to display navbar and footer
-
-### Learning curves and challenges
+## Learning curves and challenges
 
 - CSS layout of flex, flexbox, grid, etc.
 - Append HTML content, CSS styles, and scripts to document using JavaScript
@@ -97,8 +61,9 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Position elements fixed relative to parent
 - JavaScript ternary functions with multiple conditions
 - JavaScript break and continue statements
+- Set JS and its methods
 
-### Resources
+## Resources
 
 - Append HTML content using JavaScript: https://www.freecodecamp.org/news/reusable-html-components-how-to-reuse-a-header-and-footer-on-a-website/
 - Append CSS styles using JavaScript: https://attacomsian.com/blog/javascript-set-css-styles
@@ -109,6 +74,11 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 - Get all checked checkbox value in JavaScript: https://www.javatpoint.com/how-to-get-all-checked-checkbox-value-in-javascript
 - Hide input number arrows: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
 - Position elements fixed relative to parent: https://stackoverflow.com/questions/5209814/can-i-position-an-element-fixed-relative-to-parent
+- https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+- https://www.javascripttutorial.net/javascript-dom/javascript-replacechild/
+- https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
+- https://www.geeksforgeeks.org/how-to-compare-two-arrays-in-javascript/
+- https://api.jquery.com/click/
 
 - Image references: \
   ** https://unsplash.com/photos/M74Pihi2vz8 \
