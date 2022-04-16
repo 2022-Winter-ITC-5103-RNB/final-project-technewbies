@@ -26,16 +26,16 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 ### Tuyi Chen (N01531425)
 
-1. Page 1 - shop.html: overview shop page displaying all peripheral products
+1. **Page 1 - shop.html: overview shop page displaying all peripheral products**
     * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/shop.html
     * JS function filterSelection() filters elements by product type
     * JS function showElements() shows selected elements
     * JS function hideElements() hides unselected elements
-2. Page 2 - product.html: one page for a product detail
+2. **Page 2 - product.html: one page for a product detail**
     * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/product.html
     * JS function showSlides() automatically displays product images
     * JS function showImg() shows the image of chosen product
-3. Page 3 - cart.html: dummy shopping cart page
+3. **Page 3 - cart.html: dummy shopping cart page**
     * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/cart.html
     * JS function updateCart() shows cart items from JS array
     * JS function deleteItem() deletes an item from shopping cart
