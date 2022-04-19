@@ -22,6 +22,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
     * JS event: window.onload it launchs once all page loads
 2. **Page 2 - artist_test.html: a quiz for users have fun and find out whether they have artistic skills**
     * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/artist_test.html
+    * Js function slideShow() slide showing images/second using setTimeout() method
     * JS event: onClick is used when the button is clicked
     * JS function: calcResults() comparison between two arrays while collecting the right answers using a for loop
     * JS method: createElement() creates another button
