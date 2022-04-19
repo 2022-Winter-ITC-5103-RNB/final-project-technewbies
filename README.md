@@ -15,10 +15,21 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 ### Andrea Cavalcanti Nascimento (N01526433)
 
-- [x] Fully functional web page with HTML, CSS and JavaScript
-- [x] Phase 1: about me page
-- [x] Phase 2: artist test page
-- [x] Phase 3: visit us page
+1. **Page 1 - about_me.html: a brief history of Vincent Van-Dog**
+    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/about_me.html
+    * JS function: slideImg() slide show
+    * JS method: setTimeout() calls a function after a number of milliseconds
+    * JS event: window.onload it launchs once all page loads
+2. **Page 2 - artist_test.html: a quiz for users have fun and find out whether they have artistic skills**
+    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/artist_test.html
+    * JS event: onClick is used when the button is clicked
+    * JS function: calcResults() comparison between two arrays while collecting the right answers using a for loop
+    * JS method: createElement() creates another button
+    * JS method: replaceChild() replaces the previous button to the new one
+3. **Page 3 - visit_us.html: registration page to visit the galley for free**
+    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/visit_us.html
+    * jQuery method: .click(function) once the button is clicked, a form will show up 
+    * jQuery method: .slideToggle() displays the form with a sliding motion
 
 ### Mohammed Rehan Ali (N01512346)
 
