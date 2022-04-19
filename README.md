@@ -26,6 +26,7 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
     * JS function: calcResults() comparison between two arrays while collecting the right answers using a for loop
     * JS method: createElement() creates another button
     * JS method: replaceChild() replaces the previous button to the new one
+
 3. **Page 3 - visit_us.html: registration page to visit the galley for free**
     * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/visit_us.html
     * jQuery method: .click(function) once the button is clicked, a form will show up 
@@ -95,6 +96,11 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
   ** https://unsplash.com/photos/M74Pihi2vz8 \
   ** https://unsplash.com/photos/PtfiHm18W0E \
   ** https://unsplash.com/photos/8qq_QbZDSxg \
-  ** https://unsplash.com/photos/LxlQWbvPIvQ
+  ** https://unsplash.com/photos/LxlQWbvPIvQ \
+  ** https://unsplash.com/photos/nqWi9UtUN5I \
+  ** https://unsplash.com/photos/Obahj-P-LOo \
+  ** https://unsplash.com/photos/mcx96uCynr4 \
+  ** https://unsplash.com/photos/wvYdfoWPaQM \
+  ** https://unsplash.com/photos/XSMTwl7n3p4 \
 - Website content/layout references: \
   ** https://www.tinika-illustrations.com/shop
