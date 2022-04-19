@@ -8,55 +8,65 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 ### Alvaro Beltran Caceres (N01511461)
 
-- [x] Fully functional web page with HTML, CSS and JavaScript
-- [x] Phase 1: Services - Created a carousel with images of the services provide
-- [x] Phase 2: Events - Modal with "More Info" of each event. The information is been gatherer from an array of objects created in javascript and injected into the model
-- [ ] Phase 3: Contact Us
+1. **Page 1 - events.html: Listing of Vincent's events for the family and friends**
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/events.html
+   - JS function: modalOn() : The modal html is hidden from the page, using an array of objects the modal information is populated and shown in the middle of the screen
+   - JS function : modalOff() toggles the "modal-active" class when the modal is being displayed
+   - JS event: addEventListener() Adds a click event to each button inside the card
+2. **Page 2 - services.html: Showcase of 1 of the services provided by Vincent**
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/services.html
+   - Js function : slideImgs() slide showing images/second using setTimeout() method
+   - JS function : NextImg() counter to know which photo we are seeing, function checks if the current img is the last one and starts the count over creating an infinite carousel loop
+   - JS function: : displayActiveImage() Handles the transition from one image to the next one.
+3. **Page 3 - contact_us.html: Contact form for Vincet**
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/contact_us.html
+   - JS function: sendMessage() Validates email input for emptiness or unproper email format(no @). Validates text area is not empty.
+   - JS event: addEventListener() Key strokes to update character counter
 
 ### Andrea Cavalcanti Nascimento (N01526433)
 
 1. **Page 1 - about_me.html: a brief history of Vincent Van-Dog**
-    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/about_me.html
-    * JS function: slideImg() slide show
-    * JS method: setTimeout() calls a function after a number of milliseconds
-    * JS event: window.onload it launchs once all page loads
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/about_me.html
+   - JS function: slideImg() slide show
+   - JS method: setTimeout() calls a function after a number of milliseconds
+   - JS event: window.onload it launchs once all page loads
 2. **Page 2 - artist_test.html: a quiz for users have fun and find out whether they have artistic skills**
-    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/artist_test.html
-    * Js function slideShow() slide showing images/second using setTimeout() method
-    * JS event: onClick is used when the button is clicked
-    * JS function: calcResults() comparison between two arrays while collecting the right answers using a for loop
-    * JS method: createElement() creates another button
-    * JS method: replaceChild() replaces the previous button to the new one
+
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/artist_test.html
+   - Js function slideShow() slide showing images/second using setTimeout() method
+   - JS event: onClick is used when the button is clicked
+   - JS function: calcResults() comparison between two arrays while collecting the right answers using a for loop
+   - JS method: createElement() creates another button
+   - JS method: replaceChild() replaces the previous button to the new one
 
 3. **Page 3 - visit_us.html: registration page to visit the galley for free**
-    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/visit_us.html
-    * jQuery method: .click(function) once the button is clicked, a form will show up 
-    * jQuery method: .slideToggle() displays the form with a sliding motion
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/visit_us.html
+   - jQuery method: .click(function) once the button is clicked, a form will show up
+   - jQuery method: .slideToggle() displays the form with a sliding motion
 
 ### Mohammed Rehan Ali (N01512346)
 
-- 
+-
 
 ### Tuyi Chen (N01531425)
 
 1. **Page 1 - shop.html: overview shop page displaying all peripheral products**
-    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/shop.html
-    * JS function filterSelection() filters elements by product type
-    * JS function showElements() shows selected elements
-    * JS function hideElements() hides unselected elements
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/shop.html
+   - JS function filterSelection() filters elements by product type
+   - JS function showElements() shows selected elements
+   - JS function hideElements() hides unselected elements
 2. **Page 2 - product.html: one page for a product detail**
-    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/product.html
-    * JS function showSlides() automatically displays product images
-    * JS function showImg() shows the image of chosen product
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/product.html
+   - JS function showSlides() automatically displays product images
+   - JS function showImg() shows the image of chosen product
 3. **Page 3 - cart.html: dummy shopping cart page**
-    * https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/cart.html
-    * JS function updateCart() shows cart items from JS array
-    * JS function deleteItem() deletes an item from shopping cart
-    * JS function checkAll() can select/unselect all cart items
-    * JS function calculation() calculates subtotal, tax, and total price of selected items
-    * JS function minusOne() decreases the number of products by one and the lower boundary is zero
-    * JS function plusOne() increases the number of products by one
-
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/cart.html
+   - JS function updateCart() shows cart items from JS array
+   - JS function deleteItem() deletes an item from shopping cart
+   - JS function checkAll() can select/unselect all cart items
+   - JS function calculation() calculates subtotal, tax, and total price of selected items
+   - JS function minusOne() decreases the number of products by one and the lower boundary is zero
+   - JS function plusOne() increases the number of products by one
 
 ## Consistent style guide
 
@@ -102,6 +112,6 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
   ** https://unsplash.com/photos/Obahj-P-LOo \
   ** https://unsplash.com/photos/mcx96uCynr4 \
   ** https://unsplash.com/photos/wvYdfoWPaQM \
-  ** https://unsplash.com/photos/XSMTwl7n3p4 \
+  \*\* https://unsplash.com/photos/XSMTwl7n3p4 \
 - Website content/layout references: \
-  ** https://www.tinika-illustrations.com/shop
+  \*\* https://www.tinika-illustrations.com/shop

@@ -18,7 +18,6 @@ function displayActiveImage() {
   //display flex (appear) for current active image
   let activeImg = document.querySelector(`.c${imgSelector}`);
   activeImg.style.display = "flex";
-  //   console.log("selector en imagen " + imgSelector);
 
   //display none for last img
   if (document.querySelector(`.c${imgSelector - 1}`) == null) return; //Check if element exists
