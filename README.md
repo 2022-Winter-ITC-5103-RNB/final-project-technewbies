@@ -46,7 +46,20 @@ Alvaro Beltran Caceres, Andrea Cavalcanti Nascimento, Mohammed Rehan Ali, Tuyi C
 
 ### Mohammed Rehan Ali (N01512346)
 
--
+1. **Page 1 - home.html: Vincent Van-Dog home page**
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/home.html
+   - JS function: smoothScroll() - when you click the hero image of the home page it will automatically scroll to the bottom of the page in a smooth transition.
+ 
+2. **Page 2 - porfolio.html: a page where all the porfolio works can  be viewed**
+
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/porfolio.html
+   - Dynamic rendering of DOM elements, using JSON data.
+   - JS function: an event listener is add on every image element, when ever it is clicked a modal is opened
+   - JS function: when the view details button is clicked in the modal, it redirects the user to the individual page.
+
+3. **Page 3 - individual.html: you can view one project in detail on this page**
+   - https://2022-winter-itc-5103-rnb.github.io/final-project-technewbies/individual1.html
+   - JS function: whenever the main picture is clicked, the full image opens in new tab.
 
 ### Tuyi Chen (N01531425)
 
