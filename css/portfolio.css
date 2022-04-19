@@ -18,7 +18,10 @@
     }
 }
   
-  
+h2{
+  font-size:2rem;
+  margin-bottom: 1rem;
+}  
 .nav {
   padding: 5px 30px; 
  width: 100%;

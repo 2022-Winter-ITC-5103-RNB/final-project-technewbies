@@ -38,6 +38,10 @@
 width: 10rem;
 }
 
+.hide{
+  display: none;
+}
+
 .nav > .nav-btn {
  display: none;
 }
